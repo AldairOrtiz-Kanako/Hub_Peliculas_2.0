@@ -1,593 +1,1154 @@
 <!-- component -->
 <div class="bg-gray-900 min-h-screen flex items-center justify-center">
-    <div class="bg-gray-800 flex-1 flex flex-col space-y-5 lg:space-y-0 lg:flex-row lg:space-x-10 max-w-6xl sm:p-6 sm:my-2 sm:mx-4 sm:rounded-2xl">
-      <!-- Navigation -->
-      <div class="bg-gray-900 px-2 lg:px-4 py-2 lg:py-10 sm:rounded-xl flex lg:flex-col justify-between">
-        <nav class="flex items-center flex-row space-x-2 lg:space-x-0 lg:flex-col lg:space-y-2">
-          <!-- Icono casita -->
-          <div class="group relative">
-            <a class="text-white p-4 inline-flex justify-center rounded-md bg-gray-800 smooth-hover" href="inicio" aria-current="page">
-              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 sm:h-6 sm:w-6" viewBox="0 0 20 20" fill="currentColor">
-                <path d="M10.707 2.293a1 1 0 00-1.414 0l-7 7a1 1 0 001.414 1.414L4 10.414V17a1 1 0 001 1h2a1 1 0 001-1v-2a1 1 0 011-1h2a1 1 0 011 1v2a1 1 0 001 1h2a1 1 0 001-1v-6.586l.293.293a1 1 0 001.414-1.414l-7-7z" />
-              </svg>
-            </a>
-            <span class="absolute bottom-full left-1/2 -translate-x-1/2 mb-2 w-auto px-3 py-2 bg-gray-900 text-white text-xs rounded-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none">
-              Home
-            </span>
-          </div>
-          <!-- Active: bg-gray-800 text-white, Not active: text-white/50 -->
-          <!-- Icono Favoritos -->
-          <div class="group relative">
-            <a class="text-white/50 p-4 inline-flex justify-center rounded-md hover:bg-gray-800 hover:text-white smooth-hover" href="#">
-              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 sm:h-6 sm:w-6" viewBox="0 0 20 20" fill="currentColor">
-                <path fill-rule="evenodd" d="M3.172 5.172a4 4 0 015.656 0L10 6.343l1.172-1.171a4 4 0 115.656 5.656L10 17.657l-6.828-6.829a4 4 0 010-5.656z" clip-rule="evenodd" />
-              </svg>
-            </a>
-    <span class="absolute bottom-full left-1/2 -translate-x-1/2 mb-2 w-auto px-3 py-2 bg-gray-900 text-white text-xs rounded-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none">
-      Favoritos
-    </span>
-  </div>
-          <!-- Icono de peliculas -->
-          <div class="group relative">
-            <a class="text-white/50 p-4 inline-flex justify-center rounded-md hover:bg-gray-800 hover:text-white smooth-hover" href="#">
-              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 sm:h-6 sm:w-6" viewBox="0 0 20 20" fill="currentColor">
-                <path fill-rule="evenodd" d="M4 3a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V5a2 2 0 00-2-2H4zm0 2h12v2H4V5zm0 3h12v7H4V8zm3-4l1 1H7l-1-1h1zm3 0l1 1h-1l-1-1h1zm3 0l1 1h-1l-1-1h1z" clip-rule="evenodd" />
-              </svg>
-            </a>
-            <span class="absolute bottom-full left-1/2 -translate-x-1/2 mb-2 w-auto px-3 py-2 bg-gray-900 text-white text-xs rounded-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none">
-              Películas
-            </span>
-          </div>
-          <!-- Icono Series -->
-          <div class="group relative">
-            <a class="text-white/50 p-4 inline-flex justify-center rounded-md hover:bg-gray-800 hover:text-white smooth-hover" href="#">
-              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 sm:h-6 sm:w-6" viewBox="0 0 20 20" fill="currentColor">
-                <path fill-rule="evenodd" d="M4 3a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V5a2 2 0 00-2-2H4zm3 2h6v4H7V5zm8 8v2h1v-2h-1zm-2-2H7v4h6v-4zm2 0h1V9h-1v2zm1-4V5h-1v2h1zM5 5v2H4V5h1zm0 4H4v2h1V9zm-1 4h1v2H4v-2z" clip-rule="evenodd" />
-              </svg>
-            </a>
-            <span class="absolute bottom-full left-1/2 -translate-x-1/2 mb-2 w-auto px-3 py-2 bg-gray-900 text-white text-xs rounded-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none">
-              Series
-            </span>
-          </div>
-        </nav>
-        <div class="flex items-center flex-row space-x-2 lg:space-x-0 lg:flex-col lg:space-y-2">
-          <!-- Icono configuraciones -->
-          <!-- <a class="text-white/50 p-4 inline-flex justify-center rounded-md hover:bg-gray-800 hover:text-white smooth-hover" href="#">
+  <div
+    class="bg-gray-800 flex-1 flex flex-col space-y-5 lg:space-y-0 lg:flex-row lg:space-x-10 max-w-full sm:p-6 sm:my-2 sm:mx-4 sm:rounded-2xl"
+  >
+    <!-- Navigation -->
+    <div
+      class="bg-gray-900 px-2 lg:px-4 py-2 lg:py-10 sm:rounded-xl flex lg:flex-col justify-between"
+    >
+      <nav
+        class="flex items-center flex-row space-x-2 lg:space-x-0 lg:flex-col lg:space-y-2"
+      >
+        <!-- Icono casita -->
+        <div class="group relative">
+          <a
+            class="text-white p-4 inline-flex justify-center rounded-md bg-gray-800 smooth-hover"
+            href="inicio"
+            aria-current="page"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-5 w-5 sm:h-6 sm:w-6"
+              viewBox="0 0 20 20"
+              fill="currentColor"
+            >
+              <path
+                d="M10.707 2.293a1 1 0 00-1.414 0l-7 7a1 1 0 001.414 1.414L4 10.414V17a1 1 0 001 1h2a1 1 0 001-1v-2a1 1 0 011-1h2a1 1 0 011 1v2a1 1 0 001 1h2a1 1 0 001-1v-6.586l.293.293a1 1 0 001.414-1.414l-7-7z"
+              />
+            </svg>
+          </a>
+          <span
+            class="absolute bottom-full left-1/2 -translate-x-1/2 mb-2 w-auto px-3 py-2 bg-gray-900 text-white text-xs rounded-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none"
+          >
+            Home
+          </span>
+        </div>
+        <!-- Active: bg-gray-800 text-white, Not active: text-white/50 -->
+        <!-- Icono Favoritos -->
+        <div class="group relative">
+          <a
+            class="text-white/50 p-4 inline-flex justify-center rounded-md hover:bg-gray-800 hover:text-white smooth-hover"
+            href="#"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-5 w-5 sm:h-6 sm:w-6"
+              viewBox="0 0 20 20"
+              fill="currentColor"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M3.172 5.172a4 4 0 015.656 0L10 6.343l1.172-1.171a4 4 0 115.656 5.656L10 17.657l-6.828-6.829a4 4 0 010-5.656z"
+                clip-rule="evenodd"
+              />
+            </svg>
+          </a>
+          <span
+            class="absolute bottom-full left-1/2 -translate-x-1/2 mb-2 w-auto px-3 py-2 bg-gray-900 text-white text-xs rounded-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none"
+          >
+            Favoritos
+          </span>
+        </div>
+        <!-- Icono de peliculas -->
+        <div class="group relative">
+          <a
+            class="text-white/50 p-4 inline-flex justify-center rounded-md hover:bg-gray-800 hover:text-white smooth-hover"
+            href="#"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-5 w-5 sm:h-6 sm:w-6"
+              viewBox="0 0 20 20"
+              fill="currentColor"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M4 3a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V5a2 2 0 00-2-2H4zm0 2h12v2H4V5zm0 3h12v7H4V8zm3-4l1 1H7l-1-1h1zm3 0l1 1h-1l-1-1h1zm3 0l1 1h-1l-1-1h1z"
+                clip-rule="evenodd"
+              />
+            </svg>
+          </a>
+          <span
+            class="absolute bottom-full left-1/2 -translate-x-1/2 mb-2 w-auto px-3 py-2 bg-gray-900 text-white text-xs rounded-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none"
+          >
+            Películas
+          </span>
+        </div>
+        <!-- Icono Series -->
+        <div class="group relative">
+          <a
+            class="text-white/50 p-4 inline-flex justify-center rounded-md hover:bg-gray-800 hover:text-white smooth-hover"
+            href="#"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-5 w-5 sm:h-6 sm:w-6"
+              viewBox="0 0 20 20"
+              fill="currentColor"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M4 3a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V5a2 2 0 00-2-2H4zm3 2h6v4H7V5zm8 8v2h1v-2h-1zm-2-2H7v4h6v-4zm2 0h1V9h-1v2zm1-4V5h-1v2h1zM5 5v2H4V5h1zm0 4H4v2h1V9zm-1 4h1v2H4v-2z"
+                clip-rule="evenodd"
+              />
+            </svg>
+          </a>
+          <span
+            class="absolute bottom-full left-1/2 -translate-x-1/2 mb-2 w-auto px-3 py-2 bg-gray-900 text-white text-xs rounded-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none"
+          >
+            Series
+          </span>
+        </div>
+      </nav>
+      <div
+        class="flex items-center flex-row space-x-2 lg:space-x-0 lg:flex-col lg:space-y-2"
+      >
+        <!-- Icono configuraciones -->
+        <!-- <a class="text-white/50 p-4 inline-flex justify-center rounded-md hover:bg-gray-800 hover:text-white smooth-hover" href="#">
             <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 sm:h-6 sm:w-6" viewBox="0 0 20 20" fill="currentColor">
               <path fill-rule="evenodd" d="M11.49 3.17c-.38-1.56-2.6-1.56-2.98 0a1.532 1.532 0 01-2.286.948c-1.372-.836-2.942.734-2.106 2.106.54.886.061 2.042-.947 2.287-1.561.379-1.561 2.6 0 2.978a1.532 1.532 0 01.947 2.287c-.836 1.372.734 2.942 2.106 2.106a1.532 1.532 0 012.287.947c.379 1.561 2.6 1.561 2.978 0a1.533 1.533 0 012.287-.947c1.372.836 2.942-.734 2.106-2.106a1.533 1.533 0 01.947-2.287c1.561-.379 1.561-2.6 0-2.978a1.532 1.532 0 01-.947-2.287c.836-1.372-.734-2.942-2.106-2.106a1.532 1.532 0 01-2.287-.947zM10 13a3 3 0 100-6 3 3 0 000 6z" clip-rule="evenodd" />
             </svg>
           </a> -->
-          <!-- Icono perfil -->
-          <div class="group relative">
-            <a class="text-white/50 p-4 inline-flex justify-center rounded-md hover:bg-gray-800 hover:text-white smooth-hover" href="#">
-              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 sm:h-6 sm:w-6" viewBox="0 0 20 20" fill="currentColor">
-                <path fill-rule="evenodd" d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z" clip-rule="evenodd" />
-              </svg>
-            </a>
-            <span class="absolute bottom-full left-1/2 -translate-x-1/2 mb-2 w-auto px-3 py-2 bg-gray-900 text-white text-xs rounded-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none">
-              Perfil
-            </span>
-          </div>
-<!-- Cerrar Sesión -->
-  <div class="group relative">
-    <a class="text-white/50 p-4 inline-flex justify-center rounded-md hover:bg-gray-800 hover:text-white smooth-hover" href="login">
-      <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 sm:h-6 sm:w-6" viewBox="0 0 20 20" fill="currentColor">
-        <path fill-rule="evenodd" d="M3 3a1 1 0 011 1v12a1 1 0 11-2 0V4a1 1 0 011-1zm7.707 3.293a1 1 0 010 1.414L9.414 9H17a1 1 0 110 2H9.414l1.293 1.293a1 1 0 01-1.414 1.414l-3-3a1 1 0 010-1.414l3-3a1 1 0 011.414 0z" clip-rule="evenodd" />
-      </svg>
-    </a>
-     <span class="absolute bottom-full left-1/2 -translate-x-1/2 mb-2 w-auto px-3 py-2 bg-gray-900 text-white text-xs rounded-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none">
-        Cerrar Sesión
-    </span>
-  </div>
+        <!-- Icono perfil -->
+        <div class="group relative">
+          <a
+            class="text-white/50 p-4 inline-flex justify-center rounded-md hover:bg-gray-800 hover:text-white smooth-hover"
+            href="#"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-5 w-5 sm:h-6 sm:w-6"
+              viewBox="0 0 20 20"
+              fill="currentColor"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z"
+                clip-rule="evenodd"
+              />
+            </svg>
+          </a>
+          <span
+            class="absolute bottom-full left-1/2 -translate-x-1/2 mb-2 w-auto px-3 py-2 bg-gray-900 text-white text-xs rounded-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none"
+          >
+            Perfil
+          </span>
+        </div>
+        <!-- Cerrar Sesión -->
+        <div class="group relative">
+          <a
+            class="text-white/50 p-4 inline-flex justify-center rounded-md hover:bg-gray-800 hover:text-white smooth-hover"
+            href="login"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-5 w-5 sm:h-6 sm:w-6"
+              viewBox="0 0 20 20"
+              fill="currentColor"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M3 3a1 1 0 011 1v12a1 1 0 11-2 0V4a1 1 0 011-1zm7.707 3.293a1 1 0 010 1.414L9.414 9H17a1 1 0 110 2H9.414l1.293 1.293a1 1 0 01-1.414 1.414l-3-3a1 1 0 010-1.414l3-3a1 1 0 011.414 0z"
+                clip-rule="evenodd"
+              />
+            </svg>
+          </a>
+          <span
+            class="absolute bottom-full left-1/2 -translate-x-1/2 mb-2 w-auto px-3 py-2 bg-gray-900 text-white text-xs rounded-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none"
+          >
+            Cerrar Sesión
+          </span>
         </div>
       </div>
-      <!-- Content -->
-      <div class="flex-1 px-2 sm:px-0">
-        <div class="flex justify-between items-center">
-          <h3 class="text-3xl font-extralight text-white/50">Peliculas</h3>
-          <div class="inline-flex items-center space-x-2">
-            <!-- Vista Cuadricular -->
-            <!-- <a class="bg-gray-900 text-white/50 p-2 rounded-md hover:text-white smooth-hover" href="#">
+    </div>
+    <!-- Content -->
+    <div class="flex-1 px-2 sm:px-0">
+      <div class="flex justify-between items-center">
+        <h3 class="text-3xl font-extralight text-white/50">Peliculas</h3>
+        <div class="inline-flex items-center space-x-2">
+          <!-- Vista Cuadricular -->
+          <!-- <a class="bg-gray-900 text-white/50 p-2 rounded-md hover:text-white smooth-hover" href="#">
               <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2V6zM14 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2V6zM4 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2v-2zM14 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2v-2z" />
               </svg>
             </a> -->
-            <!-- Vista en lista -->
-            <!-- <a class="bg-gray-900 text-white/50 p-2 rounded-md hover:text-white smooth-hover" href="#">
+          <!-- Vista en lista -->
+          <!-- <a class="bg-gray-900 text-white/50 p-2 rounded-md hover:text-white smooth-hover" href="#">
               <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 10h16M4 14h16M4 18h16" />
               </svg>
             </a> -->
+        </div>
+      </div>
+      <div
+        class="mb-10 sm:mb-0 mt-10 grid gap-4 grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4"
+      >
+        <!-- Aquí inicia la primer pelicula -->
+        <div>
+          <div
+            class="flex max-w-sm w-full bg-gray-800 shadow-md rounded-2xl overflow-hidden mx-auto"
+          >
+            <div class="w-2 bg-gray-800"></div>
+            <div
+              class="overflow-hidden rounded-xl relative transform hover:-translate-y-2 transition ease-in-out duration-500 shadow-lg hover:shadow-2xl movie-item text-white movie-card"
+              data-movie-id="438631"
+            >
+              <div
+                class="absolute inset-0 z-10 transition duration-300 ease-in-out bg-gradient-to-t from-black via-gray-900 to-transparent"
+              ></div>
+              <div
+                class="relative cursor-pointer group z-10 px-10 pt-10 space-y-6 movie_info"
+                data-lity=""
+                href="https://www.youtube.com/embed/aSHs224Dge0"
+              >
+                <div class="poster__info align-self-end w-full">
+                  <div class="h-32"></div>
+                  <div class="space-y-6 detail_info">
+                    <div class="flex flex-col space-y-2 inner">
+                      <!-- Botón de trailer -->
+                      <a
+                        href="https://youtu.be/TTgk_iT8Uts"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="relative flex items-center w-min flex-shrink-0 p-1 text-center text-white bg-red-500 rounded-full group-hover:bg-red-700"
+                        data-unsp-sanitized="clean"
+                      >
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          class="w-10 h-10"
+                          viewBox="0 0 20 20"
+                          fill="currentColor"
+                        >
+                          <path
+                            fill-rule="evenodd"
+                            d="M10 18a8 8 0 1 0 0-16 8 8 0 0 0 0 16zM9.555 7.168A1 1 0 0 0 8 8v4a1 1 0 0 0 1.555.832l3-2a1 1 0 0 0 0-1.664l-3-2z"
+                            clip-rule="evenodd"
+                          ></path>
+                        </svg>
+                        <div
+                          class="absolute transition opacity-0 duration-500 ease-in-out transform group-hover:opacity-100 group-hover:translate-x-16 text-xl font-bold text-white group-hover:pr-2"
+                        >
+                          Trailer
+                        </div>
+                      </a>
+                      <h3
+                        class="text-2xl font-bold text-white"
+                        data-unsp-sanitized="clean"
+                      >
+                        Dune
+                      </h3>
+                      <div class="mb-0 text-lg text-gray-400">
+                        Beyond fear, destiny awaits.
+                      </div>
+                    </div>
+                    <div class="flex flex-row justify-between datos">
+                      <div class="flex flex-col datos_col">
+                        <div class="release">2021-09-15</div>
+                        <div class="text-sm text-gray-400">Release date:</div>
+                      </div>
+                      <div class="flex flex-col datos_col">
+                        <div class="release">155 min</div>
+                        <div class="text-sm text-gray-400">Runtime:</div>
+                      </div>
+                    </div>
+                    <div class="flex flex-col overview">
+                      <div class="flex flex-col"></div>
+                      <div class="text-xs text-gray-400 mb-2">Overview:</div>
+                      <p class="text-xs text-gray-100 mb-6">
+                        Paul Atreides, a brilliant and gifted young man born
+                        into a great destiny beyond his understanding, must
+                        travel to the most dangerous planet in the universe to
+                        ensure the future of his family and his people. As
+                        malevolent forces explode into conflict over the
+                        planet's exclusive supply of the most precious resource
+                        in existence-a commodity capable of unlocking humanity's
+                        greatest potential-only those who can conquer their fear
+                        will survive.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <img
+                class="absolute inset-0 transform w-full -translate-y-4"
+                src="http://image.tmdb.org/t/p/w342/s1FhMAr91WL8D5DeHOcuBELtiHJ.jpg"
+                style="filter: grayscale(0)"
+              />
+              <div
+                class="poster__footer flex flex-row relative pb-10 space-x-4 z-10"
+              >
+                <a
+                  class="flex items-center py-2 px-4 rounded-full mx-auto text-white bg-red-500 hover:bg-red-700"
+                  href="http://www.google.com/calendar/event?action=TEMPLATE&amp;dates=20210915T010000Z%2F20210915T010000Z&amp;text=Dune%20%2D%20Movie%20Premiere&amp;location=http%3A%2F%2Fmoviedates.info&amp;details=This%20reminder%20was%20created%20through%20http%3A%2F%2Fmoviedates.info"
+                  target="_blank"
+                  data-unsp-sanitized="clean"
+                >
+                  <svg
+                    class="w-6 h-6 text-gray-800 dark:text-white"
+                    aria-hidden="true"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    fill="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      d="m12.75 20.66 6.184-7.098c2.677-2.884 2.559-6.506.754-8.705-.898-1.095-2.206-1.816-3.72-1.855-1.293-.034-2.652.43-3.963 1.442-1.315-1.012-2.678-1.476-3.973-1.442-1.515.04-2.825.76-3.724 1.855-1.806 2.201-1.915 5.823.772 8.706l6.183 7.097c.19.216.46.34.743.34a.985.985 0 0 0 .743-.34Z"
+                    />
+                  </svg>
+                  <div class="text-sm text-white ml-2">Agregar a favoritos</div>
+                </a>
+              </div>
+            </div>
           </div>
         </div>
-        <div class="mb-10 sm:mb-0 mt-10 grid gap-4 grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
-          <!-- Aquí inicia la primer pelicula -->
-          <div>
-            <div class='flex max-w-sm w-full bg-white shadow-md rounded-lg overflow-hidden mx-auto'>
-                <div class='w-2 bg-gray-800'></div>
-        <div class="overflow-hidden rounded-xl relative transform hover:-translate-y-2 transition ease-in-out duration-500 shadow-lg hover:shadow-2xl movie-item text-white movie-card" data-movie-id="438631">
-            <div class="absolute inset-0 z-10 transition duration-300 ease-in-out bg-gradient-to-t from-black via-gray-900 to-transparent"></div>
-            <div class="relative cursor-pointer group z-10 px-10 pt-10 space-y-6 movie_info" data-lity="" href="https://www.youtube.com/embed/aSHs224Dge0">
+        <!-- Aquí inicia la segunda pelicula -->
+        <div>
+          <div
+            class="flex max-w-sm w-full bg-gray-800 shadow-md rounded-2xl overflow-hidden mx-auto"
+          >
+            <div class="w-2 bg-gray-800"></div>
+
+            <div
+              class="overflow-hidden rounded-xl relative transform hover:-translate-y-2 transition ease-in-out duration-500 shadow-lg hover:shadow-2xl movie-item text-white movie-card"
+              data-movie-id="438631"
+            >
+              <div
+                class="absolute inset-0 z-10 transition duration-300 ease-in-out bg-gradient-to-t from-black via-gray-900 to-transparent"
+              ></div>
+              <div
+                class="relative cursor-pointer group z-10 px-10 pt-10 space-y-6 movie_info"
+                data-lity=""
+                href="https://www.youtube.com/embed/aSHs224Dge0"
+              >
                 <div class="poster__info align-self-end w-full">
-                    <div class="h-32"></div>
-                    <div class="space-y-6 detail_info">
-                        <div class="flex flex-col space-y-2 inner">
-                          <!-- Botón de trailer -->
-                            <a href="https://youtu.be/TTgk_iT8Uts" target="_blank" rel="noopener noreferrer" class="relative flex items-center w-min flex-shrink-0 p-1 text-center text-white bg-red-500 rounded-full group-hover:bg-red-700" data-unsp-sanitized="clean">
-                                <svg xmlns="http://www.w3.org/2000/svg" class="w-10 h-10" viewBox="0 0 20 20" fill="currentColor">
-                                    <path fill-rule="evenodd" d="M10 18a8 8 0 1 0 0-16 8 8 0 0 0 0 16zM9.555 7.168A1 1 0 0 0 8 8v4a1 1 0 0 0 1.555.832l3-2a1 1 0 0 0 0-1.664l-3-2z" clip-rule="evenodd"></path>
-                                </svg>
-                                <div class="absolute transition opacity-0 duration-500 ease-in-out transform group-hover:opacity-100 group-hover:translate-x-16 text-xl font-bold text-white group-hover:pr-2">Trailer</div>
-                            </a>
-                            <h3 class="text-2xl font-bold text-white" data-unsp-sanitized="clean">Dune</h3>
-                            <div class="mb-0 text-lg text-gray-400">Beyond fear, destiny awaits.</div>
+                  <div class="h-32"></div>
+                  <div class="space-y-6 detail_info">
+                    <div class="flex flex-col space-y-2 inner">
+                      <!-- Botón de trailer -->
+                      <a
+                        href="https://youtu.be/TTgk_iT8Uts"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="relative flex items-center w-min flex-shrink-0 p-1 text-center text-white bg-red-500 rounded-full group-hover:bg-red-700"
+                        data-unsp-sanitized="clean"
+                      >
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          class="w-10 h-10"
+                          viewBox="0 0 20 20"
+                          fill="currentColor"
+                        >
+                          <path
+                            fill-rule="evenodd"
+                            d="M10 18a8 8 0 1 0 0-16 8 8 0 0 0 0 16zM9.555 7.168A1 1 0 0 0 8 8v4a1 1 0 0 0 1.555.832l3-2a1 1 0 0 0 0-1.664l-3-2z"
+                            clip-rule="evenodd"
+                          ></path>
+                        </svg>
+                        <div
+                          class="absolute transition opacity-0 duration-500 ease-in-out transform group-hover:opacity-100 group-hover:translate-x-16 text-xl font-bold text-white group-hover:pr-2"
+                        >
+                          Trailer
                         </div>
-                        <div class="flex flex-row justify-between datos">
-                            <div class="flex flex-col datos_col">
-                                <div class="release">2021-09-15</div>
-                                <div class="text-sm text-gray-400">Release date:</div>
-                            </div>
-                            <div class="flex flex-col datos_col">
-                                <div class="release">155 min</div>
-                                <div class="text-sm text-gray-400">Runtime:</div>
-                            </div>
-                        </div>
-                        <div class="flex flex-col overview">
-                            <div class="flex flex-col"></div>
-                            <div class="text-xs text-gray-400 mb-2">Overview:</div>
-                            <p class="text-xs text-gray-100 mb-6">
-                                Paul Atreides, a brilliant and gifted young man born into a great destiny beyond his understanding, must travel to the most dangerous planet in the universe to ensure the future of his family and his people. As
-                                malevolent forces explode into conflict over the planet's exclusive supply of the most precious resource in existence-a commodity capable of unlocking humanity's greatest potential-only those who can conquer their
-                                fear will survive.
-                            </p>
-                        </div>
+                      </a>
+                      <h3
+                        class="text-2xl font-bold text-white"
+                        data-unsp-sanitized="clean"
+                      >
+                        Dune
+                      </h3>
+                      <div class="mb-0 text-lg text-gray-400">
+                        Beyond fear, destiny awaits.
+                      </div>
                     </div>
+                    <div class="flex flex-row justify-between datos">
+                      <div class="flex flex-col datos_col">
+                        <div class="release">2021-09-15</div>
+                        <div class="text-sm text-gray-400">Release date:</div>
+                      </div>
+                      <div class="flex flex-col datos_col">
+                        <div class="release">155 min</div>
+                        <div class="text-sm text-gray-400">Runtime:</div>
+                      </div>
+                    </div>
+                    <div class="flex flex-col overview">
+                      <div class="flex flex-col"></div>
+                      <div class="text-xs text-gray-400 mb-2">Overview:</div>
+                      <p class="text-xs text-gray-100 mb-6">
+                        Paul Atreides, a brilliant and gifted young man born
+                        into a great destiny beyond his understanding, must
+                        travel to the most dangerous planet in the universe to
+                        ensure the future of his family and his people. As
+                        malevolent forces explode into conflict over the
+                        planet's exclusive supply of the most precious resource
+                        in existence-a commodity capable of unlocking humanity's
+                        greatest potential-only those who can conquer their fear
+                        will survive.
+                      </p>
+                    </div>
+                  </div>
                 </div>
-            </div>
-            <img class="absolute inset-0 transform w-full -translate-y-4" src="http://image.tmdb.org/t/p/w342/s1FhMAr91WL8D5DeHOcuBELtiHJ.jpg" style="filter: grayscale(0);" />
-            <div class="poster__footer flex flex-row relative pb-10 space-x-4 z-10">
+              </div>
+              <img
+                class="absolute inset-0 transform w-full -translate-y-4"
+                src="http://image.tmdb.org/t/p/w342/s1FhMAr91WL8D5DeHOcuBELtiHJ.jpg"
+                style="filter: grayscale(0)"
+              />
+              <div
+                class="poster__footer flex flex-row relative pb-10 space-x-4 z-10"
+              >
                 <a
-                    class="flex items-center py-2 px-4 rounded-full mx-auto text-white bg-red-500 hover:bg-red-700"
-                    href="http://www.google.com/calendar/event?action=TEMPLATE&amp;dates=20210915T010000Z%2F20210915T010000Z&amp;text=Dune%20%2D%20Movie%20Premiere&amp;location=http%3A%2F%2Fmoviedates.info&amp;details=This%20reminder%20was%20created%20through%20http%3A%2F%2Fmoviedates.info"
-                    target="_blank"
-                    data-unsp-sanitized="clean"
+                  class="flex items-center py-2 px-4 rounded-full mx-auto text-white bg-red-500 hover:bg-red-700"
+                  href="http://www.google.com/calendar/event?action=TEMPLATE&amp;dates=20210915T010000Z%2F20210915T010000Z&amp;text=Dune%20%2D%20Movie%20Premiere&amp;location=http%3A%2F%2Fmoviedates.info&amp;details=This%20reminder%20was%20created%20through%20http%3A%2F%2Fmoviedates.info"
+                  target="_blank"
+                  data-unsp-sanitized="clean"
                 >
-                    <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
-                    </svg>
-                    <div class="text-sm text-white ml-2">Set reminder</div>
+                  <svg
+                    class="w-6 h-6 text-gray-800 dark:text-white"
+                    aria-hidden="true"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    fill="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      d="m12.75 20.66 6.184-7.098c2.677-2.884 2.559-6.506.754-8.705-.898-1.095-2.206-1.816-3.72-1.855-1.293-.034-2.652.43-3.963 1.442-1.315-1.012-2.678-1.476-3.973-1.442-1.515.04-2.825.76-3.724 1.855-1.806 2.201-1.915 5.823.772 8.706l6.183 7.097c.19.216.46.34.743.34a.985.985 0 0 0 .743-.34Z"
+                    />
+                  </svg>
+                  <div class="text-sm text-white ml-2">Agregar a favoritos</div>
                 </a>
+              </div>
             </div>
+          </div>
         </div>
-            </div>
-        </div>
-          <!-- Aquí inicia la segunda pelicula -->
-          <div>
-            <div class='flex max-w-sm w-full bg-white shadow-md rounded-lg overflow-hidden mx-auto'>
-                <div class='w-2 bg-gray-800'></div>
-        
-        <div class="overflow-hidden rounded-xl relative transform hover:-translate-y-2 transition ease-in-out duration-500 shadow-lg hover:shadow-2xl movie-item text-white movie-card" data-movie-id="438631">
-            <div class="absolute inset-0 z-10 transition duration-300 ease-in-out bg-gradient-to-t from-black via-gray-900 to-transparent"></div>
-            <div class="relative cursor-pointer group z-10 px-10 pt-10 space-y-6 movie_info" data-lity="" href="https://www.youtube.com/embed/aSHs224Dge0">
+        <!-- Aquí inicia la tercer pelicula -->
+        <div>
+          <div
+            class="flex max-w-sm w-full bg-gray-800 shadow-md rounded-2xl overflow-hidden mx-auto"
+          >
+            <div class="w-2 bg-gray-800"></div>
+
+            <div
+              class="overflow-hidden rounded-xl relative transform hover:-translate-y-2 transition ease-in-out duration-500 shadow-lg hover:shadow-2xl movie-item text-white movie-card"
+              data-movie-id="438631"
+            >
+              <div
+                class="absolute inset-0 z-10 transition duration-300 ease-in-out bg-gradient-to-t from-black via-gray-900 to-transparent"
+              ></div>
+              <div
+                class="relative cursor-pointer group z-10 px-10 pt-10 space-y-6 movie_info"
+                data-lity=""
+                href="https://www.youtube.com/embed/aSHs224Dge0"
+              >
                 <div class="poster__info align-self-end w-full">
-                    <div class="h-32"></div>
-                    <div class="space-y-6 detail_info">
-                        <div class="flex flex-col space-y-2 inner">
-                          <!-- Botón de trailer -->
-                            <a href="https://youtu.be/TTgk_iT8Uts" target="_blank" rel="noopener noreferrer" class="relative flex items-center w-min flex-shrink-0 p-1 text-center text-white bg-red-500 rounded-full group-hover:bg-red-700" data-unsp-sanitized="clean">
-                                <svg xmlns="http://www.w3.org/2000/svg" class="w-10 h-10" viewBox="0 0 20 20" fill="currentColor">
-                                    <path fill-rule="evenodd" d="M10 18a8 8 0 1 0 0-16 8 8 0 0 0 0 16zM9.555 7.168A1 1 0 0 0 8 8v4a1 1 0 0 0 1.555.832l3-2a1 1 0 0 0 0-1.664l-3-2z" clip-rule="evenodd"></path>
-                                </svg>
-                                <div class="absolute transition opacity-0 duration-500 ease-in-out transform group-hover:opacity-100 group-hover:translate-x-16 text-xl font-bold text-white group-hover:pr-2">Trailer</div>
-                            </a>
-                            <h3 class="text-2xl font-bold text-white" data-unsp-sanitized="clean">Dune</h3>
-                            <div class="mb-0 text-lg text-gray-400">Beyond fear, destiny awaits.</div>
+                  <div class="h-32"></div>
+                  <div class="space-y-6 detail_info">
+                    <div class="flex flex-col space-y-2 inner">
+                      <a
+                        href="https://youtu.be/TTgk_iT8Uts"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="relative flex items-center w-min flex-shrink-0 p-1 text-center text-white bg-red-500 rounded-full group-hover:bg-red-700"
+                        data-unsp-sanitized="clean"
+                      >
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          class="w-10 h-10"
+                          viewBox="0 0 20 20"
+                          fill="currentColor"
+                        >
+                          <path
+                            fill-rule="evenodd"
+                            d="M10 18a8 8 0 1 0 0-16 8 8 0 0 0 0 16zM9.555 7.168A1 1 0 0 0 8 8v4a1 1 0 0 0 1.555.832l3-2a1 1 0 0 0 0-1.664l-3-2z"
+                            clip-rule="evenodd"
+                          ></path>
+                        </svg>
+                        <div
+                          class="absolute transition opacity-0 duration-500 ease-in-out transform group-hover:opacity-100 group-hover:translate-x-16 text-xl font-bold text-white group-hover:pr-2"
+                        >
+                          Trailer
                         </div>
-                        <div class="flex flex-row justify-between datos">
-                            <div class="flex flex-col datos_col">
-                                <div class="release">2021-09-15</div>
-                                <div class="text-sm text-gray-400">Release date:</div>
-                            </div>
-                            <div class="flex flex-col datos_col">
-                                <div class="release">155 min</div>
-                                <div class="text-sm text-gray-400">Runtime:</div>
-                            </div>
-                        </div>
-                        <div class="flex flex-col overview">
-                            <div class="flex flex-col"></div>
-                            <div class="text-xs text-gray-400 mb-2">Overview:</div>
-                            <p class="text-xs text-gray-100 mb-6">
-                                Paul Atreides, a brilliant and gifted young man born into a great destiny beyond his understanding, must travel to the most dangerous planet in the universe to ensure the future of his family and his people. As
-                                malevolent forces explode into conflict over the planet's exclusive supply of the most precious resource in existence-a commodity capable of unlocking humanity's greatest potential-only those who can conquer their
-                                fear will survive.
-                            </p>
-                        </div>
+                      </a>
+                      <h3
+                        class="text-2xl font-bold text-white"
+                        data-unsp-sanitized="clean"
+                      >
+                        Dune
+                      </h3>
+                      <div class="mb-0 text-lg text-gray-400">
+                        Beyond fear, destiny awaits.
+                      </div>
                     </div>
+                    <div class="flex flex-row justify-between datos">
+                      <div class="flex flex-col datos_col"></div>
+                      <div class="flex flex-col datos_col">
+                        <div class="release">2021-09-15</div>
+                        <div class="text-sm text-gray-400">Release date:</div>
+                      </div>
+                      <div class="flex flex-col datos_col">
+                        <div class="release">155 min</div>
+                        <div class="text-sm text-gray-400">Runtime:</div>
+                      </div>
+                    </div>
+                    <div class="flex flex-col overview">
+                      <div class="flex flex-col"></div>
+                      <div class="text-xs text-gray-400 mb-2">Overview:</div>
+                      <p class="text-xs text-gray-100 mb-6">
+                        Paul Atreides, a brilliant and gifted young man born
+                        into a great destiny beyond his understanding, must
+                        travel to the most dangerous planet in the universe to
+                        ensure the future of his family and his people. As
+                        malevolent forces explode into conflict over the
+                        planet's exclusive supply of the most precious resource
+                        in existence-a commodity capable of unlocking humanity's
+                        greatest potential-only those who can conquer their fear
+                        will survive.
+                      </p>
+                    </div>
+                  </div>
                 </div>
-            </div>
-            <img class="absolute inset-0 transform w-full -translate-y-4" src="http://image.tmdb.org/t/p/w342/s1FhMAr91WL8D5DeHOcuBELtiHJ.jpg" style="filter: grayscale(0);" />
-            <div class="poster__footer flex flex-row relative pb-10 space-x-4 z-10">
+              </div>
+              <img
+                class="absolute inset-0 transform w-full -translate-y-4"
+                src="http://image.tmdb.org/t/p/w342/s1FhMAr91WL8D5DeHOcuBELtiHJ.jpg"
+                style="filter: grayscale(0)"
+              />
+              <div
+                class="poster__footer flex flex-row relative pb-10 space-x-4 z-10"
+              >
                 <a
-                    class="flex items-center py-2 px-4 rounded-full mx-auto text-white bg-red-500 hover:bg-red-700"
-                    href="http://www.google.com/calendar/event?action=TEMPLATE&amp;dates=20210915T010000Z%2F20210915T010000Z&amp;text=Dune%20%2D%20Movie%20Premiere&amp;location=http%3A%2F%2Fmoviedates.info&amp;details=This%20reminder%20was%20created%20through%20http%3A%2F%2Fmoviedates.info"
-                    target="_blank"
-                    data-unsp-sanitized="clean"
+                  class="flex items-center py-2 px-4 rounded-full mx-auto text-white bg-red-500 hover:bg-red-700"
+                  href="http://www.google.com/calendar/event?action=TEMPLATE&amp;dates=20210915T010000Z%2F20210915T010000Z&amp;text=Dune%20%2D%20Movie%20Premiere&amp;location=http%3A%2F%2Fmoviedates.info&amp;details=This%20reminder%20was%20created%20through%20http%3A%2F%2Fmoviedates.info"
+                  target="_blank"
+                  data-unsp-sanitized="clean"
                 >
-                    <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
-                    </svg>
-                    <div class="text-sm text-white ml-2">Set reminder</div>
+                  <svg
+                    class="w-6 h-6 text-gray-800 dark:text-white"
+                    aria-hidden="true"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    fill="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      d="m12.75 20.66 6.184-7.098c2.677-2.884 2.559-6.506.754-8.705-.898-1.095-2.206-1.816-3.72-1.855-1.293-.034-2.652.43-3.963 1.442-1.315-1.012-2.678-1.476-3.973-1.442-1.515.04-2.825.76-3.724 1.855-1.806 2.201-1.915 5.823.772 8.706l6.183 7.097c.19.216.46.34.743.34a.985.985 0 0 0 .743-.34Z"
+                    />
+                  </svg>
+                  <div class="text-sm text-white ml-2">Agregar a favoritos</div>
                 </a>
+              </div>
             </div>
+          </div>
         </div>
-        
-            </div>
-        </div>
-          <!-- Aquí inicia la tercer pelicula -->
-          <div>
-            <div class='flex max-w-sm w-full bg-white shadow-md rounded-lg overflow-hidden mx-auto'>
-                <div class='w-2 bg-gray-800'></div>
-        
-        <div class="overflow-hidden rounded-xl relative transform hover:-translate-y-2 transition ease-in-out duration-500 shadow-lg hover:shadow-2xl movie-item text-white movie-card" data-movie-id="438631">
-            <div class="absolute inset-0 z-10 transition duration-300 ease-in-out bg-gradient-to-t from-black via-gray-900 to-transparent"></div>
-            <div class="relative cursor-pointer group z-10 px-10 pt-10 space-y-6 movie_info" data-lity="" href="https://www.youtube.com/embed/aSHs224Dge0">
+        <!-- Aquí inicia la cuarta pelicula -->
+        <div>
+          <div
+            class="flex max-w-sm w-full bg-gray-800 shadow-md rounded-2xl overflow-hidden mx-auto"
+          >
+            <div class="w-2 bg-gray-800"></div>
+
+            <div
+              class="overflow-hidden rounded-xl relative transform hover:-translate-y-2 transition ease-in-out duration-500 shadow-lg hover:shadow-2xl movie-item text-white movie-card"
+              data-movie-id="438631"
+            >
+              <div
+                class="absolute inset-0 z-10 transition duration-300 ease-in-out bg-gradient-to-t from-black via-gray-900 to-transparent"
+              ></div>
+              <div
+                class="relative cursor-pointer group z-10 px-10 pt-10 space-y-6 movie_info"
+                data-lity=""
+                href="https://www.youtube.com/embed/aSHs224Dge0"
+              >
                 <div class="poster__info align-self-end w-full">
-                    <div class="h-32"></div>
-                    <div class="space-y-6 detail_info">
-                        <div class="flex flex-col space-y-2 inner">
-                            <a href="https://youtu.be/TTgk_iT8Uts" target="_blank" rel="noopener noreferrer" class="relative flex items-center w-min flex-shrink-0 p-1 text-center text-white bg-red-500 rounded-full group-hover:bg-red-700" data-unsp-sanitized="clean">
-                                <svg xmlns="http://www.w3.org/2000/svg" class="w-10 h-10" viewBox="0 0 20 20" fill="currentColor">
-                                    <path fill-rule="evenodd" d="M10 18a8 8 0 1 0 0-16 8 8 0 0 0 0 16zM9.555 7.168A1 1 0 0 0 8 8v4a1 1 0 0 0 1.555.832l3-2a1 1 0 0 0 0-1.664l-3-2z" clip-rule="evenodd"></path>
-                                </svg>
-                                <div class="absolute transition opacity-0 duration-500 ease-in-out transform group-hover:opacity-100 group-hover:translate-x-16 text-xl font-bold text-white group-hover:pr-2">Trailer</div>
-                            </a>
-                            <h3 class="text-2xl font-bold text-white" data-unsp-sanitized="clean">Dune</h3>
-                            <div class="mb-0 text-lg text-gray-400">Beyond fear, destiny awaits.</div>
+                  <div class="h-32"></div>
+                  <div class="space-y-6 detail_info">
+                    <div class="flex flex-col space-y-2 inner">
+                      <a
+                        href="https://youtu.be/TTgk_iT8Uts"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="relative flex items-center w-min flex-shrink-0 p-1 text-center text-white bg-red-500 rounded-full group-hover:bg-red-700"
+                        data-unsp-sanitized="clean"
+                      >
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          class="w-10 h-10"
+                          viewBox="0 0 20 20"
+                          fill="currentColor"
+                        >
+                          <path
+                            fill-rule="evenodd"
+                            d="M10 18a8 8 0 1 0 0-16 8 8 0 0 0 0 16zM9.555 7.168A1 1 0 0 0 8 8v4a1 1 0 0 0 1.555.832l3-2a1 1 0 0 0 0-1.664l-3-2z"
+                            clip-rule="evenodd"
+                          ></path>
+                        </svg>
+                        <div
+                          class="absolute transition opacity-0 duration-500 ease-in-out transform group-hover:opacity-100 group-hover:translate-x-16 text-xl font-bold text-white group-hover:pr-2"
+                        >
+                          Trailer
                         </div>
-                        <div class="flex flex-row justify-between datos">
-                            <div class="flex flex-col datos_col">
-                            </div>
-                            <div class="flex flex-col datos_col">
-                                <div class="release">2021-09-15</div>
-                                <div class="text-sm text-gray-400">Release date:</div>
-                            </div>
-                            <div class="flex flex-col datos_col">
-                                <div class="release">155 min</div>
-                                <div class="text-sm text-gray-400">Runtime:</div>
-                            </div>
-                        </div>
-                        <div class="flex flex-col overview">
-                            <div class="flex flex-col"></div>
-                            <div class="text-xs text-gray-400 mb-2">Overview:</div>
-                            <p class="text-xs text-gray-100 mb-6">
-                                Paul Atreides, a brilliant and gifted young man born into a great destiny beyond his understanding, must travel to the most dangerous planet in the universe to ensure the future of his family and his people. As
-                                malevolent forces explode into conflict over the planet's exclusive supply of the most precious resource in existence-a commodity capable of unlocking humanity's greatest potential-only those who can conquer their
-                                fear will survive.
-                            </p>
-                        </div>
+                      </a>
+                      <h3
+                        class="text-2xl font-bold text-white"
+                        data-unsp-sanitized="clean"
+                      >
+                        Dune
+                      </h3>
+                      <div class="mb-0 text-lg text-gray-400">
+                        Beyond fear, destiny awaits.
+                      </div>
                     </div>
+                    <div class="flex flex-row justify-between datos">
+                      <div class="flex flex-col datos_col">
+                        <div class="release">2021-09-15</div>
+                        <div class="text-sm text-gray-400">Release date:</div>
+                      </div>
+                      <div class="flex flex-col datos_col">
+                        <div class="release">155 min</div>
+                        <div class="text-sm text-gray-400">Runtime:</div>
+                      </div>
+                    </div>
+                    <div class="flex flex-col overview">
+                      <div class="flex flex-col"></div>
+                      <div class="text-xs text-gray-400 mb-2">Overview:</div>
+                      <p class="text-xs text-gray-100 mb-6">
+                        Paul Atreides, a brilliant and gifted young man born
+                        into a great destiny beyond his understanding, must
+                        travel to the most dangerous planet in the universe to
+                        ensure the future of his family and his people. As
+                        malevolent forces explode into conflict over the
+                        planet's exclusive supply of the most precious resource
+                        in existence-a commodity capable of unlocking humanity's
+                        greatest potential-only those who can conquer their fear
+                        will survive.
+                      </p>
+                    </div>
+                  </div>
                 </div>
-            </div>
-            <img class="absolute inset-0 transform w-full -translate-y-4" src="http://image.tmdb.org/t/p/w342/s1FhMAr91WL8D5DeHOcuBELtiHJ.jpg" style="filter: grayscale(0);" />
-            <div class="poster__footer flex flex-row relative pb-10 space-x-4 z-10">
+              </div>
+              <img
+                class="absolute inset-0 transform w-full -translate-y-4"
+                src="http://image.tmdb.org/t/p/w342/s1FhMAr91WL8D5DeHOcuBELtiHJ.jpg"
+                style="filter: grayscale(0)"
+              />
+              <div
+                class="poster__footer flex flex-row relative pb-10 space-x-4 z-10"
+              >
                 <a
-                    class="flex items-center py-2 px-4 rounded-full mx-auto text-white bg-red-500 hover:bg-red-700"
-                    href="http://www.google.com/calendar/event?action=TEMPLATE&amp;dates=20210915T010000Z%2F20210915T010000Z&amp;text=Dune%20%2D%20Movie%20Premiere&amp;location=http%3A%2F%2Fmoviedates.info&amp;details=This%20reminder%20was%20created%20through%20http%3A%2F%2Fmoviedates.info"
-                    target="_blank"
-                    data-unsp-sanitized="clean"
+                  class="flex items-center py-2 px-4 rounded-full mx-auto text-white bg-red-500 hover:bg-red-700"
+                  href="http://www.google.com/calendar/event?action=TEMPLATE&amp;dates=20210915T010000Z%2F20210915T010000Z&amp;text=Dune%20%2D%20Movie%20Premiere&amp;location=http%3A%2F%2Fmoviedates.info&amp;details=This%20reminder%20was%20created%20through%20http%3A%2F%2Fmoviedates.info"
+                  target="_blank"
+                  data-unsp-sanitized="clean"
                 >
-                    <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
-                    </svg>
-                    <div class="text-sm text-white ml-2">Set reminder</div>
+                  <svg
+                    class="w-6 h-6 text-gray-800 dark:text-white"
+                    aria-hidden="true"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    fill="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      d="m12.75 20.66 6.184-7.098c2.677-2.884 2.559-6.506.754-8.705-.898-1.095-2.206-1.816-3.72-1.855-1.293-.034-2.652.43-3.963 1.442-1.315-1.012-2.678-1.476-3.973-1.442-1.515.04-2.825.76-3.724 1.855-1.806 2.201-1.915 5.823.772 8.706l6.183 7.097c.19.216.46.34.743.34a.985.985 0 0 0 .743-.34Z"
+                    />
+                  </svg>
+                  <div class="text-sm text-white ml-2">Agregar a favoritos</div>
                 </a>
+              </div>
             </div>
+          </div>
         </div>
-        
-            </div>
-        </div>
-          <!-- Aquí inicia la cuarta pelicula -->
-          <div>
-            <div class='flex max-w-sm w-full bg-white shadow-md rounded-lg overflow-hidden mx-auto'>
-                <div class='w-2 bg-gray-800'></div>
-        
-        <div class="overflow-hidden rounded-xl relative transform hover:-translate-y-2 transition ease-in-out duration-500 shadow-lg hover:shadow-2xl movie-item text-white movie-card" data-movie-id="438631">
-            <div class="absolute inset-0 z-10 transition duration-300 ease-in-out bg-gradient-to-t from-black via-gray-900 to-transparent"></div>
-            <div class="relative cursor-pointer group z-10 px-10 pt-10 space-y-6 movie_info" data-lity="" href="https://www.youtube.com/embed/aSHs224Dge0">
+        <!-- Aquí inicia la quinta pelicula -->
+        <div>
+          <div
+            class="flex max-w-sm w-full bg-gray-800 shadow-md rounded-2xl overflow-hidden mx-auto"
+          >
+            <div class="w-2 bg-gray-800"></div>
+
+            <div
+              class="overflow-hidden rounded-xl relative transform hover:-translate-y-2 transition ease-in-out duration-500 shadow-lg hover:shadow-2xl movie-item text-white movie-card"
+              data-movie-id="438631"
+            >
+              <div
+                class="absolute inset-0 z-10 transition duration-300 ease-in-out bg-gradient-to-t from-black via-gray-900 to-transparent"
+              ></div>
+              <div
+                class="relative cursor-pointer group z-10 px-10 pt-10 space-y-6 movie_info"
+                data-lity=""
+                href="https://www.youtube.com/embed/aSHs224Dge0"
+              >
                 <div class="poster__info align-self-end w-full">
-                    <div class="h-32"></div>
-                    <div class="space-y-6 detail_info">
-                        <div class="flex flex-col space-y-2 inner">
-                            <a href="https://youtu.be/TTgk_iT8Uts" target="_blank" rel="noopener noreferrer" class="relative flex items-center w-min flex-shrink-0 p-1 text-center text-white bg-red-500 rounded-full group-hover:bg-red-700" data-unsp-sanitized="clean">
-                                <svg xmlns="http://www.w3.org/2000/svg" class="w-10 h-10" viewBox="0 0 20 20" fill="currentColor">
-                                    <path fill-rule="evenodd" d="M10 18a8 8 0 1 0 0-16 8 8 0 0 0 0 16zM9.555 7.168A1 1 0 0 0 8 8v4a1 1 0 0 0 1.555.832l3-2a1 1 0 0 0 0-1.664l-3-2z" clip-rule="evenodd"></path>
-                                </svg>
-                                <div class="absolute transition opacity-0 duration-500 ease-in-out transform group-hover:opacity-100 group-hover:translate-x-16 text-xl font-bold text-white group-hover:pr-2">Trailer</div>
-                            </a>
-                            <h3 class="text-2xl font-bold text-white" data-unsp-sanitized="clean">Dune</h3>
-                            <div class="mb-0 text-lg text-gray-400">Beyond fear, destiny awaits.</div>
+                  <div class="h-32"></div>
+                  <div class="space-y-6 detail_info">
+                    <div class="flex flex-col space-y-2 inner">
+                      <a
+                        href="https://youtu.be/TTgk_iT8Uts"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="relative flex items-center w-min flex-shrink-0 p-1 text-center text-white bg-red-500 rounded-full group-hover:bg-red-700"
+                        data-unsp-sanitized="clean"
+                      >
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          class="w-10 h-10"
+                          viewBox="0 0 20 20"
+                          fill="currentColor"
+                        >
+                          <path
+                            fill-rule="evenodd"
+                            d="M10 18a8 8 0 1 0 0-16 8 8 0 0 0 0 16zM9.555 7.168A1 1 0 0 0 8 8v4a1 1 0 0 0 1.555.832l3-2a1 1 0 0 0 0-1.664l-3-2z"
+                            clip-rule="evenodd"
+                          ></path>
+                        </svg>
+                        <div
+                          class="absolute transition opacity-0 duration-500 ease-in-out transform group-hover:opacity-100 group-hover:translate-x-16 text-xl font-bold text-white group-hover:pr-2"
+                        >
+                          Trailer
                         </div>
-                        <div class="flex flex-row justify-between datos">
-                            <div class="flex flex-col datos_col">
-                                <div class="release">2021-09-15</div>
-                                <div class="text-sm text-gray-400">Release date:</div>
-                            </div>
-                            <div class="flex flex-col datos_col">
-                                <div class="release">155 min</div>
-                                <div class="text-sm text-gray-400">Runtime:</div>
-                            </div>
-                        </div>
-                        <div class="flex flex-col overview">
-                            <div class="flex flex-col"></div>
-                            <div class="text-xs text-gray-400 mb-2">Overview:</div>
-                            <p class="text-xs text-gray-100 mb-6">
-                                Paul Atreides, a brilliant and gifted young man born into a great destiny beyond his understanding, must travel to the most dangerous planet in the universe to ensure the future of his family and his people. As
-                                malevolent forces explode into conflict over the planet's exclusive supply of the most precious resource in existence-a commodity capable of unlocking humanity's greatest potential-only those who can conquer their
-                                fear will survive.
-                            </p>
-                        </div>
+                      </a>
+                      <h3
+                        class="text-2xl font-bold text-white"
+                        data-unsp-sanitized="clean"
+                      >
+                        Dune
+                      </h3>
+                      <div class="mb-0 text-lg text-gray-400">
+                        Beyond fear, destiny awaits.
+                      </div>
                     </div>
+                    <div class="flex flex-row justify-between datos">
+                      <div class="flex flex-col datos_col">
+                        <div class="release">2021-09-15</div>
+                        <div class="text-sm text-gray-400">Release date:</div>
+                      </div>
+                      <div class="flex flex-col datos_col">
+                        <div class="release">155 min</div>
+                        <div class="text-sm text-gray-400">Runtime:</div>
+                      </div>
+                    </div>
+                    <div class="flex flex-col overview">
+                      <div class="flex flex-col"></div>
+                      <div class="text-xs text-gray-400 mb-2">Overview:</div>
+                      <p class="text-xs text-gray-100 mb-6">
+                        Paul Atreides, a brilliant and gifted young man born
+                        into a great destiny beyond his understanding, must
+                        travel to the most dangerous planet in the universe to
+                        ensure the future of his family and his people. As
+                        malevolent forces explode into conflict over the
+                        planet's exclusive supply of the most precious resource
+                        in existence-a commodity capable of unlocking humanity's
+                        greatest potential-only those who can conquer their fear
+                        will survive.
+                      </p>
+                    </div>
+                  </div>
                 </div>
-            </div>
-            <img class="absolute inset-0 transform w-full -translate-y-4" src="http://image.tmdb.org/t/p/w342/s1FhMAr91WL8D5DeHOcuBELtiHJ.jpg" style="filter: grayscale(0);" />
-            <div class="poster__footer flex flex-row relative pb-10 space-x-4 z-10">
+              </div>
+              <img
+                class="absolute inset-0 transform w-full -translate-y-4"
+                src="http://image.tmdb.org/t/p/w342/s1FhMAr91WL8D5DeHOcuBELtiHJ.jpg"
+                style="filter: grayscale(0)"
+              />
+              <div
+                class="poster__footer flex flex-row relative pb-10 space-x-4 z-10"
+              >
                 <a
-                    class="flex items-center py-2 px-4 rounded-full mx-auto text-white bg-red-500 hover:bg-red-700"
-                    href="http://www.google.com/calendar/event?action=TEMPLATE&amp;dates=20210915T010000Z%2F20210915T010000Z&amp;text=Dune%20%2D%20Movie%20Premiere&amp;location=http%3A%2F%2Fmoviedates.info&amp;details=This%20reminder%20was%20created%20through%20http%3A%2F%2Fmoviedates.info"
-                    target="_blank"
-                    data-unsp-sanitized="clean"
+                  class="flex items-center py-2 px-4 rounded-full mx-auto text-white bg-red-500 hover:bg-red-700"
+                  href="http://www.google.com/calendar/event?action=TEMPLATE&amp;dates=20210915T010000Z%2F20210915T010000Z&amp;text=Dune%20%2D%20Movie%20Premiere&amp;location=http%3A%2F%2Fmoviedates.info&amp;details=This%20reminder%20was%20created%20through%20http%3A%2F%2Fmoviedates.info"
+                  target="_blank"
+                  data-unsp-sanitized="clean"
                 >
-                    <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
-                    </svg>
-                    <div class="text-sm text-white ml-2">Set reminder</div>
+                  <svg
+                    class="w-6 h-6 text-gray-800 dark:text-white"
+                    aria-hidden="true"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    fill="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      d="m12.75 20.66 6.184-7.098c2.677-2.884 2.559-6.506.754-8.705-.898-1.095-2.206-1.816-3.72-1.855-1.293-.034-2.652.43-3.963 1.442-1.315-1.012-2.678-1.476-3.973-1.442-1.515.04-2.825.76-3.724 1.855-1.806 2.201-1.915 5.823.772 8.706l6.183 7.097c.19.216.46.34.743.34a.985.985 0 0 0 .743-.34Z"
+                    />
+                  </svg>
+                  <div class="text-sm text-white ml-2">Agregar a favoritos</div>
                 </a>
+              </div>
             </div>
+          </div>
         </div>
-            </div>
-        </div>
-          <!-- Aquí inicia la quinta pelicula -->
-          <div>
-            <div class='flex max-w-sm w-full bg-white shadow-md rounded-lg overflow-hidden mx-auto'>
-                <div class='w-2 bg-gray-800'></div>
-        
-        <div class="overflow-hidden rounded-xl relative transform hover:-translate-y-2 transition ease-in-out duration-500 shadow-lg hover:shadow-2xl movie-item text-white movie-card" data-movie-id="438631">
-            <div class="absolute inset-0 z-10 transition duration-300 ease-in-out bg-gradient-to-t from-black via-gray-900 to-transparent"></div>
-            <div class="relative cursor-pointer group z-10 px-10 pt-10 space-y-6 movie_info" data-lity="" href="https://www.youtube.com/embed/aSHs224Dge0">
+        <!-- Aquí esta la sexta pelicula -->
+        <div>
+          <div
+            class="flex max-w-sm w-full bg-gray-800 shadow-md rounded-2xl overflow-hidden mx-auto"
+          >
+            <div class="w-2 bg-gray-800"></div>
+
+            <div
+              class="overflow-hidden rounded-xl relative transform hover:-translate-y-2 transition ease-in-out duration-500 shadow-lg hover:shadow-2xl movie-item text-white movie-card"
+              data-movie-id="438631"
+            >
+              <div
+                class="absolute inset-0 z-10 transition duration-300 ease-in-out bg-gradient-to-t from-black via-gray-900 to-transparent"
+              ></div>
+              <div
+                class="relative cursor-pointer group z-10 px-10 pt-10 space-y-6 movie_info"
+                data-lity=""
+                href="https://www.youtube.com/embed/aSHs224Dge0"
+              >
                 <div class="poster__info align-self-end w-full">
-                    <div class="h-32"></div>
-                    <div class="space-y-6 detail_info">
-                        <div class="flex flex-col space-y-2 inner">
-                            <a href="https://youtu.be/TTgk_iT8Uts" target="_blank" rel="noopener noreferrer" class="relative flex items-center w-min flex-shrink-0 p-1 text-center text-white bg-red-500 rounded-full group-hover:bg-red-700" data-unsp-sanitized="clean">
-                                <svg xmlns="http://www.w3.org/2000/svg" class="w-10 h-10" viewBox="0 0 20 20" fill="currentColor">
-                                    <path fill-rule="evenodd" d="M10 18a8 8 0 1 0 0-16 8 8 0 0 0 0 16zM9.555 7.168A1 1 0 0 0 8 8v4a1 1 0 0 0 1.555.832l3-2a1 1 0 0 0 0-1.664l-3-2z" clip-rule="evenodd"></path>
-                                </svg>
-                                <div class="absolute transition opacity-0 duration-500 ease-in-out transform group-hover:opacity-100 group-hover:translate-x-16 text-xl font-bold text-white group-hover:pr-2">Trailer</div>
-                            </a>
-                            <h3 class="text-2xl font-bold text-white" data-unsp-sanitized="clean">Dune</h3>
-                            <div class="mb-0 text-lg text-gray-400">Beyond fear, destiny awaits.</div>
+                  <div class="h-32"></div>
+                  <div class="space-y-6 detail_info">
+                    <div class="flex flex-col space-y-2 inner">
+                      <a
+                        href="https://youtu.be/TTgk_iT8Uts"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="relative flex items-center w-min flex-shrink-0 p-1 text-center text-white bg-red-500 rounded-full group-hover:bg-red-700"
+                        data-unsp-sanitized="clean"
+                      >
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          class="w-10 h-10"
+                          viewBox="0 0 20 20"
+                          fill="currentColor"
+                        >
+                          <path
+                            fill-rule="evenodd"
+                            d="M10 18a8 8 0 1 0 0-16 8 8 0 0 0 0 16zM9.555 7.168A1 1 0 0 0 8 8v4a1 1 0 0 0 1.555.832l3-2a1 1 0 0 0 0-1.664l-3-2z"
+                            clip-rule="evenodd"
+                          ></path>
+                        </svg>
+                        <div
+                          class="absolute transition opacity-0 duration-500 ease-in-out transform group-hover:opacity-100 group-hover:translate-x-16 text-xl font-bold text-white group-hover:pr-2"
+                        >
+                          Trailer
                         </div>
-                        <div class="flex flex-row justify-between datos">
-                            <div class="flex flex-col datos_col">
-                                <div class="release">2021-09-15</div>
-                                <div class="text-sm text-gray-400">Release date:</div>
-                            </div>
-                            <div class="flex flex-col datos_col">
-                                <div class="release">155 min</div>
-                                <div class="text-sm text-gray-400">Runtime:</div>
-                            </div>
-                        </div>
-                        <div class="flex flex-col overview">
-                            <div class="flex flex-col"></div>
-                            <div class="text-xs text-gray-400 mb-2">Overview:</div>
-                            <p class="text-xs text-gray-100 mb-6">
-                                Paul Atreides, a brilliant and gifted young man born into a great destiny beyond his understanding, must travel to the most dangerous planet in the universe to ensure the future of his family and his people. As
-                                malevolent forces explode into conflict over the planet's exclusive supply of the most precious resource in existence-a commodity capable of unlocking humanity's greatest potential-only those who can conquer their
-                                fear will survive.
-                            </p>
-                        </div>
+                      </a>
+                      <h3
+                        class="text-2xl font-bold text-white"
+                        data-unsp-sanitized="clean"
+                      >
+                        Dune
+                      </h3>
+                      <div class="mb-0 text-lg text-gray-400">
+                        Beyond fear, destiny awaits.
+                      </div>
                     </div>
+                    <div class="flex flex-row justify-between datos">
+                      <div class="flex flex-col datos_col">
+                        <div class="release">2021-09-15</div>
+                        <div class="text-sm text-gray-400">Release date:</div>
+                      </div>
+                      <div class="flex flex-col datos_col">
+                        <div class="release">155 min</div>
+                        <div class="text-sm text-gray-400">Runtime:</div>
+                      </div>
+                    </div>
+                    <div class="flex flex-col overview">
+                      <div class="flex flex-col"></div>
+                      <div class="text-xs text-gray-400 mb-2">Overview:</div>
+                      <p class="text-xs text-gray-100 mb-6">
+                        Paul Atreides, a brilliant and gifted young man born
+                        into a great destiny beyond his understanding, must
+                        travel to the most dangerous planet in the universe to
+                        ensure the future of his family and his people. As
+                        malevolent forces explode into conflict over the
+                        planet's exclusive supply of the most precious resource
+                        in existence-a commodity capable of unlocking humanity's
+                        greatest potential-only those who can conquer their fear
+                        will survive.
+                      </p>
+                    </div>
+                  </div>
                 </div>
-            </div>
-            <img class="absolute inset-0 transform w-full -translate-y-4" src="http://image.tmdb.org/t/p/w342/s1FhMAr91WL8D5DeHOcuBELtiHJ.jpg" style="filter: grayscale(0);" />
-            <div class="poster__footer flex flex-row relative pb-10 space-x-4 z-10">
+              </div>
+              <img
+                class="absolute inset-0 transform w-full -translate-y-4"
+                src="http://image.tmdb.org/t/p/w342/s1FhMAr91WL8D5DeHOcuBELtiHJ.jpg"
+                style="filter: grayscale(0)"
+              />
+              <div
+                class="poster__footer flex flex-row relative pb-10 space-x-4 z-10"
+              >
                 <a
-                    class="flex items-center py-2 px-4 rounded-full mx-auto text-white bg-red-500 hover:bg-red-700"
-                    href="http://www.google.com/calendar/event?action=TEMPLATE&amp;dates=20210915T010000Z%2F20210915T010000Z&amp;text=Dune%20%2D%20Movie%20Premiere&amp;location=http%3A%2F%2Fmoviedates.info&amp;details=This%20reminder%20was%20created%20through%20http%3A%2F%2Fmoviedates.info"
-                    target="_blank"
-                    data-unsp-sanitized="clean"
+                  class="flex items-center py-2 px-4 rounded-full mx-auto text-white bg-red-500 hover:bg-red-700"
+                  href="http://www.google.com/calendar/event?action=TEMPLATE&amp;dates=20210915T010000Z%2F20210915T010000Z&amp;text=Dune%20%2D%20Movie%20Premiere&amp;location=http%3A%2F%2Fmoviedates.info&amp;details=This%20reminder%20was%20created%20through%20http%3A%2F%2Fmoviedates.info"
+                  target="_blank"
+                  data-unsp-sanitized="clean"
                 >
-                    <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
-                    </svg>
-                    <div class="text-sm text-white ml-2">Set reminder</div>
+                  <svg
+                    class="w-6 h-6 text-gray-800 dark:text-white"
+                    aria-hidden="true"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    fill="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      d="m12.75 20.66 6.184-7.098c2.677-2.884 2.559-6.506.754-8.705-.898-1.095-2.206-1.816-3.72-1.855-1.293-.034-2.652.43-3.963 1.442-1.315-1.012-2.678-1.476-3.973-1.442-1.515.04-2.825.76-3.724 1.855-1.806 2.201-1.915 5.823.772 8.706l6.183 7.097c.19.216.46.34.743.34a.985.985 0 0 0 .743-.34Z"
+                    />
+                  </svg>
+                  <div class="text-sm text-white ml-2">Agregar a favoritos</div>
                 </a>
+              </div>
             </div>
-        </div>       
-            </div>
+          </div>
         </div>
-          <!-- Aquí esta la sexta pelicula -->
-          <div>
-            <div class='flex max-w-sm w-full bg-white shadow-md rounded-lg overflow-hidden mx-auto'>
-                <div class='w-2 bg-gray-800'></div>
-        
-        <div class="overflow-hidden rounded-xl relative transform hover:-translate-y-2 transition ease-in-out duration-500 shadow-lg hover:shadow-2xl movie-item text-white movie-card" data-movie-id="438631">
-            <div class="absolute inset-0 z-10 transition duration-300 ease-in-out bg-gradient-to-t from-black via-gray-900 to-transparent"></div>
-            <div class="relative cursor-pointer group z-10 px-10 pt-10 space-y-6 movie_info" data-lity="" href="https://www.youtube.com/embed/aSHs224Dge0">
+        <!-- Aquí esta la septima pelicula -->
+        <div>
+          <div
+            class="flex max-w-sm w-full bg-gray-800 shadow-md rounded-2xl overflow-hidden mx-auto"
+          >
+            <div class="w-2 bg-gray-800"></div>
+
+            <div
+              class="overflow-hidden rounded-xl relative transform hover:-translate-y-2 transition ease-in-out duration-500 shadow-lg hover:shadow-2xl movie-item text-white movie-card"
+              data-movie-id="438631"
+            >
+              <div
+                class="absolute inset-0 z-10 transition duration-300 ease-in-out bg-gradient-to-t from-black via-gray-900 to-transparent"
+              ></div>
+              <div
+                class="relative cursor-pointer group z-10 px-10 pt-10 space-y-6 movie_info"
+                data-lity=""
+                href="https://www.youtube.com/embed/aSHs224Dge0"
+              >
                 <div class="poster__info align-self-end w-full">
-                    <div class="h-32"></div>
-                    <div class="space-y-6 detail_info">
-                        <div class="flex flex-col space-y-2 inner">
-                            <a href="https://youtu.be/TTgk_iT8Uts" target="_blank" rel="noopener noreferrer" class="relative flex items-center w-min flex-shrink-0 p-1 text-center text-white bg-red-500 rounded-full group-hover:bg-red-700" data-unsp-sanitized="clean">
-                                <svg xmlns="http://www.w3.org/2000/svg" class="w-10 h-10" viewBox="0 0 20 20" fill="currentColor">
-                                    <path fill-rule="evenodd" d="M10 18a8 8 0 1 0 0-16 8 8 0 0 0 0 16zM9.555 7.168A1 1 0 0 0 8 8v4a1 1 0 0 0 1.555.832l3-2a1 1 0 0 0 0-1.664l-3-2z" clip-rule="evenodd"></path>
-                                </svg>
-                                <div class="absolute transition opacity-0 duration-500 ease-in-out transform group-hover:opacity-100 group-hover:translate-x-16 text-xl font-bold text-white group-hover:pr-2">Trailer</div>
-                            </a>
-                            <h3 class="text-2xl font-bold text-white" data-unsp-sanitized="clean">Dune</h3>
-                            <div class="mb-0 text-lg text-gray-400">Beyond fear, destiny awaits.</div>
+                  <div class="h-32"></div>
+                  <div class="space-y-6 detail_info">
+                    <div class="flex flex-col space-y-2 inner">
+                      <a
+                        href="https://youtu.be/TTgk_iT8Uts"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="relative flex items-center w-min flex-shrink-0 p-1 text-center text-white bg-red-500 rounded-full group-hover:bg-red-700"
+                        data-unsp-sanitized="clean"
+                      >
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          class="w-10 h-10"
+                          viewBox="0 0 20 20"
+                          fill="currentColor"
+                        >
+                          <path
+                            fill-rule="evenodd"
+                            d="M10 18a8 8 0 1 0 0-16 8 8 0 0 0 0 16zM9.555 7.168A1 1 0 0 0 8 8v4a1 1 0 0 0 1.555.832l3-2a1 1 0 0 0 0-1.664l-3-2z"
+                            clip-rule="evenodd"
+                          ></path>
+                        </svg>
+                        <div
+                          class="absolute transition opacity-0 duration-500 ease-in-out transform group-hover:opacity-100 group-hover:translate-x-16 text-xl font-bold text-white group-hover:pr-2"
+                        >
+                          Trailer
                         </div>
-                        <div class="flex flex-row justify-between datos">
-                            <div class="flex flex-col datos_col">
-                                <div class="release">2021-09-15</div>
-                                <div class="text-sm text-gray-400">Release date:</div>
-                            </div>
-                            <div class="flex flex-col datos_col">
-                                <div class="release">155 min</div>
-                                <div class="text-sm text-gray-400">Runtime:</div>
-                            </div>
-                        </div>
-                        <div class="flex flex-col overview">
-                            <div class="flex flex-col"></div>
-                            <div class="text-xs text-gray-400 mb-2">Overview:</div>
-                            <p class="text-xs text-gray-100 mb-6">
-                                Paul Atreides, a brilliant and gifted young man born into a great destiny beyond his understanding, must travel to the most dangerous planet in the universe to ensure the future of his family and his people. As
-                                malevolent forces explode into conflict over the planet's exclusive supply of the most precious resource in existence-a commodity capable of unlocking humanity's greatest potential-only those who can conquer their
-                                fear will survive.
-                            </p>
-                        </div>
+                      </a>
+                      <h3
+                        class="text-2xl font-bold text-white"
+                        data-unsp-sanitized="clean"
+                      >
+                        Dune
+                      </h3>
+                      <div class="mb-0 text-lg text-gray-400">
+                        Beyond fear, destiny awaits.
+                      </div>
                     </div>
+                    <div class="flex flex-row justify-between datos">
+                      <div class="flex flex-col datos_col">
+                        <div class="release">2021-09-15</div>
+                        <div class="text-sm text-gray-400">Release date:</div>
+                      </div>
+                      <div class="flex flex-col datos_col">
+                        <div class="release">155 min</div>
+                        <div class="text-sm text-gray-400">Runtime:</div>
+                      </div>
+                    </div>
+                    <div class="flex flex-col overview">
+                      <div class="flex flex-col"></div>
+                      <div class="text-xs text-gray-400 mb-2">Overview:</div>
+                      <p class="text-xs text-gray-100 mb-6">
+                        Paul Atreides, a brilliant and gifted young man born
+                        into a great destiny beyond his understanding, must
+                        travel to the most dangerous planet in the universe to
+                        ensure the future of his family and his people. As
+                        malevolent forces explode into conflict over the
+                        planet's exclusive supply of the most precious resource
+                        in existence-a commodity capable of unlocking humanity's
+                        greatest potential-only those who can conquer their fear
+                        will survive.
+                      </p>
+                    </div>
+                  </div>
                 </div>
-            </div>
-            <img class="absolute inset-0 transform w-full -translate-y-4" src="http://image.tmdb.org/t/p/w342/s1FhMAr91WL8D5DeHOcuBELtiHJ.jpg" style="filter: grayscale(0);" />
-            <div class="poster__footer flex flex-row relative pb-10 space-x-4 z-10">
+              </div>
+              <img
+                class="absolute inset-0 transform w-full -translate-y-4"
+                src="http://image.tmdb.org/t/p/w342/s1FhMAr91WL8D5DeHOcuBELtiHJ.jpg"
+                style="filter: grayscale(0)"
+              />
+              <div
+                class="poster__footer flex flex-row relative pb-10 space-x-4 z-10"
+              >
                 <a
-                    class="flex items-center py-2 px-4 rounded-full mx-auto text-white bg-red-500 hover:bg-red-700"
-                    href="http://www.google.com/calendar/event?action=TEMPLATE&amp;dates=20210915T010000Z%2F20210915T010000Z&amp;text=Dune%20%2D%20Movie%20Premiere&amp;location=http%3A%2F%2Fmoviedates.info&amp;details=This%20reminder%20was%20created%20through%20http%3A%2F%2Fmoviedates.info"
-                    target="_blank"
-                    data-unsp-sanitized="clean"
+                  class="flex items-center py-2 px-4 rounded-full mx-auto text-white bg-red-500 hover:bg-red-700"
+                  href="http://www.google.com/calendar/event?action=TEMPLATE&amp;dates=20210915T010000Z%2F20210915T010000Z&amp;text=Dune%20%2D%20Movie%20Premiere&amp;location=http%3A%2F%2Fmoviedates.info&amp;details=This%20reminder%20was%20created%20through%20http%3A%2F%2Fmoviedates.info"
+                  target="_blank"
+                  data-unsp-sanitized="clean"
                 >
-                    <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
-                    </svg>
-                    <div class="text-sm text-white ml-2">Set reminder</div>
+                  <svg
+                    class="w-6 h-6 text-gray-800 dark:text-white"
+                    aria-hidden="true"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    fill="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      d="m12.75 20.66 6.184-7.098c2.677-2.884 2.559-6.506.754-8.705-.898-1.095-2.206-1.816-3.72-1.855-1.293-.034-2.652.43-3.963 1.442-1.315-1.012-2.678-1.476-3.973-1.442-1.515.04-2.825.76-3.724 1.855-1.806 2.201-1.915 5.823.772 8.706l6.183 7.097c.19.216.46.34.743.34a.985.985 0 0 0 .743-.34Z"
+                    />
+                  </svg>
+                  <div class="text-sm text-white ml-2">Agregar a favoritos</div>
                 </a>
+              </div>
             </div>
-        </div>     
-            </div>
+          </div>
         </div>
-          <!-- Aquí esta la sexta pelicula -->
-          <div>
-            <div class='flex max-w-sm w-full bg-white shadow-md rounded-lg overflow-hidden mx-auto'>
-                <div class='w-2 bg-gray-800'></div>
-        
-        <div class="overflow-hidden rounded-xl relative transform hover:-translate-y-2 transition ease-in-out duration-500 shadow-lg hover:shadow-2xl movie-item text-white movie-card" data-movie-id="438631">
-            <div class="absolute inset-0 z-10 transition duration-300 ease-in-out bg-gradient-to-t from-black via-gray-900 to-transparent"></div>
-            <div class="relative cursor-pointer group z-10 px-10 pt-10 space-y-6 movie_info" data-lity="" href="https://www.youtube.com/embed/aSHs224Dge0">
+        <!-- Aquí esta la octava pelicula -->
+        <div>
+          <div
+            class="flex max-w-sm w-full bg-gray-800 shadow-md rounded-2xl overflow-hidden mx-auto"
+          >
+            <div class="w-2 bg-gray-800"></div>
+
+            <div
+              class="overflow-hidden rounded-xl relative transform hover:-translate-y-2 transition ease-in-out duration-500 shadow-lg hover:shadow-2xl movie-item text-white movie-card"
+              data-movie-id="438631"
+            >
+              <div
+                class="absolute inset-0 z-10 transition duration-300 ease-in-out bg-gradient-to-t from-black via-gray-900 to-transparent"
+              ></div>
+              <div
+                class="relative cursor-pointer group z-10 px-10 pt-10 space-y-6 movie_info"
+                data-lity=""
+                href="https://www.youtube.com/embed/aSHs224Dge0"
+              >
                 <div class="poster__info align-self-end w-full">
-                    <div class="h-32"></div>
-                    <div class="space-y-6 detail_info">
-                        <div class="flex flex-col space-y-2 inner">
-                            <a href="https://youtu.be/TTgk_iT8Uts" target="_blank" rel="noopener noreferrer" class="relative flex items-center w-min flex-shrink-0 p-1 text-center text-white bg-red-500 rounded-full group-hover:bg-red-700" data-unsp-sanitized="clean">
-                                <svg xmlns="http://www.w3.org/2000/svg" class="w-10 h-10" viewBox="0 0 20 20" fill="currentColor">
-                                    <path fill-rule="evenodd" d="M10 18a8 8 0 1 0 0-16 8 8 0 0 0 0 16zM9.555 7.168A1 1 0 0 0 8 8v4a1 1 0 0 0 1.555.832l3-2a1 1 0 0 0 0-1.664l-3-2z" clip-rule="evenodd"></path>
-                                </svg>
-                                <div class="absolute transition opacity-0 duration-500 ease-in-out transform group-hover:opacity-100 group-hover:translate-x-16 text-xl font-bold text-white group-hover:pr-2">Trailer</div>
-                            </a>
-                            <h3 class="text-2xl font-bold text-white" data-unsp-sanitized="clean">Dune</h3>
-                            <div class="mb-0 text-lg text-gray-400">Beyond fear, destiny awaits.</div>
+                  <div class="h-32"></div>
+                  <div class="space-y-6 detail_info">
+                    <div class="flex flex-col space-y-2 inner">
+                      <a
+                        href="https://youtu.be/TTgk_iT8Uts"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="relative flex items-center w-min flex-shrink-0 p-1 text-center text-white bg-red-500 rounded-full group-hover:bg-red-700"
+                        data-unsp-sanitized="clean"
+                      >
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          class="w-10 h-10"
+                          viewBox="0 0 20 20"
+                          fill="currentColor"
+                        >
+                          <path
+                            fill-rule="evenodd"
+                            d="M10 18a8 8 0 1 0 0-16 8 8 0 0 0 0 16zM9.555 7.168A1 1 0 0 0 8 8v4a1 1 0 0 0 1.555.832l3-2a1 1 0 0 0 0-1.664l-3-2z"
+                            clip-rule="evenodd"
+                          ></path>
+                        </svg>
+                        <div
+                          class="absolute transition opacity-0 duration-500 ease-in-out transform group-hover:opacity-100 group-hover:translate-x-16 text-xl font-bold text-white group-hover:pr-2"
+                        >
+                          Trailer
                         </div>
-                        <div class="flex flex-row justify-between datos">
-                            <div class="flex flex-col datos_col">
-                                <div class="release">2021-09-15</div>
-                                <div class="text-sm text-gray-400">Release date:</div>
-                            </div>
-                            <div class="flex flex-col datos_col">
-                                <div class="release">155 min</div>
-                                <div class="text-sm text-gray-400">Runtime:</div>
-                            </div>
-                        </div>
-                        <div class="flex flex-col overview">
-                            <div class="flex flex-col"></div>
-                            <div class="text-xs text-gray-400 mb-2">Overview:</div>
-                            <p class="text-xs text-gray-100 mb-6">
-                                Paul Atreides, a brilliant and gifted young man born into a great destiny beyond his understanding, must travel to the most dangerous planet in the universe to ensure the future of his family and his people. As
-                                malevolent forces explode into conflict over the planet's exclusive supply of the most precious resource in existence-a commodity capable of unlocking humanity's greatest potential-only those who can conquer their
-                                fear will survive.
-                            </p>
-                        </div>
+                      </a>
+                      <h3
+                        class="text-2xl font-bold text-white"
+                        data-unsp-sanitized="clean"
+                      >
+                        Dune
+                      </h3>
+                      <div class="mb-0 text-lg text-gray-400">
+                        Beyond fear, destiny awaits.
+                      </div>
                     </div>
-                </div>
-            </div>
-            <img class="absolute inset-0 transform w-full -translate-y-4" src="http://image.tmdb.org/t/p/w342/s1FhMAr91WL8D5DeHOcuBELtiHJ.jpg" style="filter: grayscale(0);" />
-            <div class="poster__footer flex flex-row relative pb-10 space-x-4 z-10">
-                <a
-                    class="flex items-center py-2 px-4 rounded-full mx-auto text-white bg-red-500 hover:bg-red-700"
-                    href="http://www.google.com/calendar/event?action=TEMPLATE&amp;dates=20210915T010000Z%2F20210915T010000Z&amp;text=Dune%20%2D%20Movie%20Premiere&amp;location=http%3A%2F%2Fmoviedates.info&amp;details=This%20reminder%20was%20created%20through%20http%3A%2F%2Fmoviedates.info"
-                    target="_blank"
-                    data-unsp-sanitized="clean"
-                >
-                    <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
-                    </svg>
-                    <div class="text-sm text-white ml-2">Set reminder</div>
-                </a>
-            </div>
-        </div>
-        
-            </div>
-        </div>
-          <!-- Aquí esta la septima pelicula -->
-          <div>
-            <div class='flex max-w-sm w-full bg-white shadow-md rounded-lg overflow-hidden mx-auto'>
-                <div class='w-2 bg-gray-800'></div>
-        
-        <div class="overflow-hidden rounded-xl relative transform hover:-translate-y-2 transition ease-in-out duration-500 shadow-lg hover:shadow-2xl movie-item text-white movie-card" data-movie-id="438631">
-            <div class="absolute inset-0 z-10 transition duration-300 ease-in-out bg-gradient-to-t from-black via-gray-900 to-transparent"></div>
-            <div class="relative cursor-pointer group z-10 px-10 pt-10 space-y-6 movie_info" data-lity="" href="https://www.youtube.com/embed/aSHs224Dge0">
-                <div class="poster__info align-self-end w-full">
-                    <div class="h-32"></div>
-                    <div class="space-y-6 detail_info">
-                        <div class="flex flex-col space-y-2 inner">
-                            <a href="https://youtu.be/TTgk_iT8Uts" target="_blank" rel="noopener noreferrer" class="relative flex items-center w-min flex-shrink-0 p-1 text-center text-white bg-red-500 rounded-full group-hover:bg-red-700" data-unsp-sanitized="clean">
-                                <svg xmlns="http://www.w3.org/2000/svg" class="w-10 h-10" viewBox="0 0 20 20" fill="currentColor">
-                                    <path fill-rule="evenodd" d="M10 18a8 8 0 1 0 0-16 8 8 0 0 0 0 16zM9.555 7.168A1 1 0 0 0 8 8v4a1 1 0 0 0 1.555.832l3-2a1 1 0 0 0 0-1.664l-3-2z" clip-rule="evenodd"></path>
-                                </svg>
-                                <div class="absolute transition opacity-0 duration-500 ease-in-out transform group-hover:opacity-100 group-hover:translate-x-16 text-xl font-bold text-white group-hover:pr-2">Trailer</div>
-                            </a>
-                            <h3 class="text-2xl font-bold text-white" data-unsp-sanitized="clean">Dune</h3>
-                            <div class="mb-0 text-lg text-gray-400">Beyond fear, destiny awaits.</div>
-                        </div>
-                        <div class="flex flex-row justify-between datos">
-                            <div class="flex flex-col datos_col">
-                                <div class="release">2021-09-15</div>
-                                <div class="text-sm text-gray-400">Release date:</div>
-                            </div>
-                            <div class="flex flex-col datos_col">
-                                <div class="release">155 min</div>
-                                <div class="text-sm text-gray-400">Runtime:</div>
-                            </div>
-                        </div>
-                        <div class="flex flex-col overview">
-                            <div class="flex flex-col"></div>
-                            <div class="text-xs text-gray-400 mb-2">Overview:</div>
-                            <p class="text-xs text-gray-100 mb-6">
-                                Paul Atreides, a brilliant and gifted young man born into a great destiny beyond his understanding, must travel to the most dangerous planet in the universe to ensure the future of his family and his people. As
-                                malevolent forces explode into conflict over the planet's exclusive supply of the most precious resource in existence-a commodity capable of unlocking humanity's greatest potential-only those who can conquer their
-                                fear will survive.
-                            </p>
-                        </div>
+                    <div class="flex flex-row justify-between datos">
+                      <div class="flex flex-col datos_col">
+                        <div class="release">2021-09-15</div>
+                        <div class="text-sm text-gray-400">Release date:</div>
+                      </div>
+                      <div class="flex flex-col datos_col">
+                        <div class="release">155 min</div>
+                        <div class="text-sm text-gray-400">Runtime:</div>
+                      </div>
                     </div>
+                    <div class="flex flex-col overview">
+                      <div class="flex flex-col"></div>
+                      <div class="text-xs text-gray-400 mb-2">Overview:</div>
+                      <p class="text-xs text-gray-100 mb-6">
+                        Paul Atreides, a brilliant and gifted young man born
+                        into a great destiny beyond his understanding, must
+                        travel to the most dangerous planet in the universe to
+                        ensure the future of his family and his people. As
+                        malevolent forces explode into conflict over the
+                        planet's exclusive supply of the most precious resource
+                        in existence-a commodity capable of unlocking humanity's
+                        greatest potential-only those who can conquer their fear
+                        will survive.
+                      </p>
+                    </div>
+                  </div>
                 </div>
-            </div>
-            <img class="absolute inset-0 transform w-full -translate-y-4" src="http://image.tmdb.org/t/p/w342/s1FhMAr91WL8D5DeHOcuBELtiHJ.jpg" style="filter: grayscale(0);" />
-            <div class="poster__footer flex flex-row relative pb-10 space-x-4 z-10">
+              </div>
+              <img
+                class="absolute inset-0 transform w-full -translate-y-4"
+                src="http://image.tmdb.org/t/p/w342/s1FhMAr91WL8D5DeHOcuBELtiHJ.jpg"
+                style="filter: grayscale(0)"
+              />
+              <div
+                class="poster__footer flex flex-row relative pb-10 space-x-4 z-10"
+              >
                 <a
-                    class="flex items-center py-2 px-4 rounded-full mx-auto text-white bg-red-500 hover:bg-red-700"
-                    href="http://www.google.com/calendar/event?action=TEMPLATE&amp;dates=20210915T010000Z%2F20210915T010000Z&amp;text=Dune%20%2D%20Movie%20Premiere&amp;location=http%3A%2F%2Fmoviedates.info&amp;details=This%20reminder%20was%20created%20through%20http%3A%2F%2Fmoviedates.info"
-                    target="_blank"
-                    data-unsp-sanitized="clean"
+                  class="flex items-center py-2 px-4 rounded-full mx-auto text-white bg-red-500 hover:bg-red-700"
+                  href="http://www.google.com/calendar/event?action=TEMPLATE&amp;dates=20210915T010000Z%2F20210915T010000Z&amp;text=Dune%20%2D%20Movie%20Premiere&amp;location=http%3A%2F%2Fmoviedates.info&amp;details=This%20reminder%20was%20created%20through%20http%3A%2F%2Fmoviedates.info"
+                  target="_blank"
+                  data-unsp-sanitized="clean"
                 >
-                    <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
-                    </svg>
-                    <div class="text-sm text-white ml-2">Set reminder</div>
+                  <svg
+                    class="w-6 h-6 text-gray-800 dark:text-white"
+                    aria-hidden="true"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    fill="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      d="m12.75 20.66 6.184-7.098c2.677-2.884 2.559-6.506.754-8.705-.898-1.095-2.206-1.816-3.72-1.855-1.293-.034-2.652.43-3.963 1.442-1.315-1.012-2.678-1.476-3.973-1.442-1.515.04-2.825.76-3.724 1.855-1.806 2.201-1.915 5.823.772 8.706l6.183 7.097c.19.216.46.34.743.34a.985.985 0 0 0 .743-.34Z"
+                    />
+                  </svg>
+                  <div class="text-sm text-white ml-2">Agregar a favoritos</div>
                 </a>
+              </div>
             </div>
-        </div>    
-            </div>
-        </div>
+          </div>
         </div>
       </div>
     </div>
   </div>
+</div>
