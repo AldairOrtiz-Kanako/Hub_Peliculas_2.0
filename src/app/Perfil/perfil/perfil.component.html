@@ -1,0 +1,162 @@
+<!-- component -->
+<div class="bg-gray-900 min-h-screen flex items-center justify-center">
+  <div
+    class="bg-gray-800 text-white flex-1 flex flex-col space-y-5 max-w-4xl sm:p-6 sm:my-2 sm:mx-4 sm:rounded-2xl"
+  >
+    <!-- Botón Volver -->
+    <div class="flex justify-between items-center px-5 py-3">
+      <a
+        href="inicio"
+        class="text-white/50 hover:text-white flex items-center transition-colors duration-200"
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="h-6 w-6 mr-2"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke="currentColor"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M10 19l-7-7m0 0l7-7m-7 7h18"
+          />
+        </svg>
+        Volver
+      </a>
+      <h1 class="text-3xl font-semibold">Mi perfil</h1>
+    </div>
+
+    <!-- Imagen de perfil central -->
+    <div class="flex flex-col items-center mt-6">
+      <div class="relative">
+        <img
+          class="h-32 w-32 object-cover rounded-full border-4 border-blue-600"
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS-QUnqLB8cBhwiE25j04qJrM0GgGBe2j7fpGVZPzjerJFp_49ZfxG6t91p6HBrAmEXEek&usqp=CAU"
+          alt="Foto de perfil"
+        />
+        <label
+          for="profile-image"
+          class="absolute bottom-0 right-0 bg-blue-600 rounded-full p-2 cursor-pointer hover:bg-blue-700 transition-colors duration-200"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="h-6 w-6 text-white"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M3 9a2 2 0 012-2h.93a2 2 0 001.664-.89l.812-1.22A2 2 0 0110.07 4h3.86a2 2 0 011.664.89l.812 1.22A2 2 0 0018.07 7H19a2 2 0 012 2v9a2 2 0 01-2 2H5a2 2 0 01-2-2V9z"
+            />
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M15 13a3 3 0 11-6 0 3 3 0 016 0z"
+            />
+          </svg>
+        </label>
+        <input id="profile-image" type="file" class="hidden" />
+      </div>
+      <h2 class="text-2xl font-semibold mt-4">Nombre de Usuario</h2>
+    </div>
+
+    <div class="w-full px-5">
+      <h2 class="text-3xl font-light pt-5">Editar mi perfil</h2>
+
+      <form class="my-5">
+        <label
+          class="relative block p-3 border-2 border-gray-700 rounded-md mt-5"
+          for="name"
+        >
+          <span class="text-md font-semibold text-gray-300">Nombre</span>
+          <input
+            class="w-full bg-transparent p-0 text-sm text-gray-300 focus:outline-none"
+            id="name"
+            type="text"
+            placeholder="Tu nombre"
+          />
+        </label>
+
+        <label
+          class="relative block p-3 border-2 border-gray-700 rounded-md mt-5"
+          for="handle"
+        >
+          <span class="text-md font-semibold text-gray-300">addby.me/</span>
+          <input
+            class="w-full bg-transparent p-0 text-sm text-gray-300 focus:outline-none"
+            id="handle"
+            type="text"
+            placeholder="username"
+          />
+        </label>
+
+        <label
+          class="relative block p-3 border-2 border-gray-700 rounded-md mt-5"
+          for="upi"
+        >
+          <span class="text-md font-semibold text-gray-300">Email</span>
+          <input
+            class="w-full bg-transparent p-0 text-sm text-gray-300 focus:outline-none"
+            id="upi"
+            type="text"
+            placeholder="ej: lisa859sh@okaxis"
+          />
+        </label>
+
+        <label
+          class="relative block p-3 border-2 border-gray-700 rounded-md mt-5"
+          for="paypal"
+        >
+          <span class="text-md font-semibold text-gray-300">Contraseña</span>
+          <input
+            class="w-full bg-transparent p-0 text-sm text-gray-300 focus:outline-none"
+            id="paypal"
+            type="text"
+            placeholder="ej: contraseña123#"
+          />
+          <button
+            class="font-medium bg-blue-600 px-2 py-1 text-white text-sm rounded-md mt-2 hover:bg-blue-700 transition-colors duration-200"
+          >
+            Cambiar contraseña
+          </button>
+        </label>
+
+        <h3 class="text-2xl font-semibold mt-5">Mis generos favoritos:</h3>
+        <div class="flex flex-wrap gap-2 mt-2">
+          <button
+            class="border-2 border-gray-700 rounded-md px-3 py-1 text-sm font-bold hover:bg-gray-700 transition-colors duration-200"
+          >
+            Drama
+          </button>
+          <button
+            class="border-2 border-gray-700 rounded-md px-3 py-1 text-sm font-bold hover:bg-gray-700 transition-colors duration-200"
+          >
+            Terror
+          </button>
+          <button
+            class="border-2 border-gray-700 rounded-md px-3 py-1 text-sm font-bold hover:bg-gray-700 transition-colors duration-200"
+          >
+            Acción
+          </button>
+          <button
+            class="border-2 border-gray-700 rounded-md px-3 py-1 text-sm font-bold hover:bg-gray-700 transition-colors duration-200"
+          >
+            Anime
+          </button>
+        </div>
+
+        <button
+          class="mt-5 bg-blue-600 text-white px-5 py-2 rounded-lg font-bold hover:bg-blue-700 transition-colors duration-200 w-full"
+        >
+          Guardar cambios
+        </button>
+      </form>
+    </div>
+  </div>
+</div>
