@@ -6,15 +6,12 @@ import { Router } from '@angular/router';
   standalone: true,
   imports: [],
   templateUrl: './login.component.html',
-  styleUrl: './login.component.css'
+  styleUrl: './login.component.css',
 })
-
 export class LoginComponent {
-
   constructor(private router: Router) {}
 
   Inicio() {
     this.router.navigate(['/inicio']);
   }
-
 }
