@@ -12,11 +12,11 @@ import { UsersService } from '../../Services/users/users.service';
 })
 export class RegistroComponent {
   user = {
-    firstName: '',
-    lastName: '',
-    username: '',
-    email: '',
-    password: '',
+    Nombre: '',
+    Apellido: '',
+    NombreUsuario: '',
+    Correo: '',
+    Contrasena: '',
   };
 
   constructor(private router: Router, private usersService: UsersService) {}
