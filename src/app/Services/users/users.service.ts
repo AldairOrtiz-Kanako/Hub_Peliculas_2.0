@@ -27,6 +27,18 @@ export interface Pelicula {
   trailer: string;
 }
 
+export interface Serie {
+  titulo: string;
+  temporadas: number;
+  episodios: number;
+  fechaEstreno: Date;
+  sinopsis: string;
+  genero: string;
+  director: string;
+  poster: string;
+  trailer: string;
+}
+
 @Injectable({
   providedIn: 'root',
 })
@@ -50,5 +62,9 @@ export class UsersService {
 
   getCatalogoPeliculas(): Observable<Pelicula[]> {
     return this.http.get<Pelicula[]>(`${this.apiUrl}/Movies`);
+  }
+
+  getCatalogoSeries(): Observable<Serie[]> {
+    return this.http.get<Serie[]>(`${this.apiUrl}/Series`);
   }
 }
