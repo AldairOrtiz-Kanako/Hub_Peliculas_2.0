@@ -5,6 +5,12 @@
     <!-- Content -->
     <div class="flex-1 px-2 sm:px-0">
       <app-header></app-header>
+
+      <!-- Mensaje de éxito -->
+      <div *ngIf="mensajeExito" class="mensaje-exito fixed top-20 left-1/2 transform -translate-x-1/2 bg-green-500 text-white px-6 py-3 rounded shadow-lg z-50">
+        {{ mensajeExito }}
+      </div>
+
       <div class="mb-10 sm:mb-0 mt-10 grid gap-4 grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
         <ng-container *ngIf="catalogoItems$ | async as catalogoItems">
           <div *ngFor="let item of catalogoItems" class="flex">
@@ -42,6 +48,7 @@
                     </div>
                     <!-- Botón de Favoritos -->
                     <button 
+                      (click)="agregarAFavoritos(item); $event.stopPropagation();"
                       class="w-full py-2 px-4 bg-red-500 text-white text-xs font-semibold rounded-lg hover:bg-red-700 focus:outline-none focus:ring-2 focus:ring-red-500 focus:ring-opacity-50 transition-colors duration-300 flex items-center justify-center mt-3"
                     >
                       <svg class="w-4 h-4 mr-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">

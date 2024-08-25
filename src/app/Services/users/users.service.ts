@@ -53,6 +53,12 @@ interface LoginResponse {
   userId: string;
 }
 
+export interface AgregarFavoritoParams {
+  usuarioID: number;
+  peliculasID?: number | null;
+  seriesID?: number | null;
+}
+
 @Injectable({
   providedIn: 'root',
 })
@@ -128,6 +134,13 @@ export class UsersService {
         );
       })
     );
+  }
+
+  agregarAFavoritos(params: AgregarFavoritoParams): Observable<string> {
+    return this.http.post<string>(`${this.apiUrl}/Favoritos/agregar`, params)
+      .pipe(
+        catchError(this.handleError)
+      );
   }
 
   private setSession(authResult: LoginResponse) {

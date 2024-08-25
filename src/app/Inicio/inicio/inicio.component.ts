@@ -6,8 +6,10 @@ import { Observable, of } from 'rxjs';
 import { map } from 'rxjs/operators';
 import { SidebarComponent } from '../../shared/components/sidebar/sidebar.component';
 import { HeaderComponent } from '../../shared/components/header/header.component';
+import { UsersService, AgregarFavoritoParams } from '../../Services/users/users.service';
 
 interface CatalogoItem {
+  id: number;
   tipo: string;
   titulo: string;
   fechaEstreno: Date;
@@ -31,8 +33,9 @@ interface CatalogoItem {
 export class InicioComponent implements OnInit {
   isModalVisible: boolean = false;
   catalogoItems$: Observable<CatalogoItem[]> = of([]);
+  mensajeExito: string | null = null;
 
-  constructor(private http: HttpClient) {}
+  constructor(private http: HttpClient, private usersService: UsersService) {}
 
   ngOnInit() {
     this.fetchCatalogoCompleto();
@@ -45,7 +48,6 @@ export class InicioComponent implements OnInit {
     );
   }
 
-  
   private shuffleArray(array: CatalogoItem[]): CatalogoItem[] {
     for (let i = array.length - 1; i > 0; i--) {
       const j = Math.floor(Math.random() * (i + 1));
@@ -75,5 +77,36 @@ export class InicioComponent implements OnInit {
 
   handleImageError(event: any) {
     event.target.src = this.getDefaultPoster();
+  }
+
+  agregarAFavoritos(item: CatalogoItem) {
+    const userId = this.usersService.getUserId();
+    if (userId) {
+      const params: AgregarFavoritoParams = {
+        usuarioID: parseInt(userId),
+        peliculasID: item.tipo === 'Película' ? item.id : null,
+        seriesID: item.tipo === 'Serie' ? item.id : null
+      };
+      this.usersService.agregarAFavoritos(params).subscribe({
+        next: (response: any) => {
+          console.log('Agregado a favoritos:', response);
+          this.mostrarMensajeExito(`${item.titulo} se ha agregado a favoritos correctamente.`);
+        },
+        error: (error: any) => {
+          console.error('Error al agregar a favoritos:', error);
+          this.mostrarMensajeExito('Hubo un error al agregar a favoritos. Por favor, intenta de nuevo.');
+        }
+      });
+    } else {
+      console.error('Usuario no autenticado');
+      this.mostrarMensajeExito('Debes iniciar sesión para agregar a favoritos.');
+    }
+  }
+
+  mostrarMensajeExito(mensaje: string) {
+    this.mensajeExito = mensaje;
+    setTimeout(() => {
+      this.mensajeExito = null;
+    }, 3000); // El mensaje desaparecerá después de 3 segundos
   }
 }
