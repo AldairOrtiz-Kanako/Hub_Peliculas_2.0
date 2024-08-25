@@ -23,7 +23,7 @@ export class LoginComponent {
       next: (response) => {
         if (response.isSuccess) {
           console.log('Login exitoso');
-          localStorage.setItem('token', response.toke); // Guarda el token
+          localStorage.setItem('token', response.token); // Guarda el token
           this.router.navigate(['/inicio']);
         } else {
           this.errorMessage = 'Credenciales incorrectas';
