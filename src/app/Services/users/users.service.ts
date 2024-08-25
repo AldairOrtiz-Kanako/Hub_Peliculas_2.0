@@ -32,4 +32,8 @@ export class UsersService {
   getCatalogoCompleto(): Observable<CatalogoItem[]> {
     return this.http.get<CatalogoItem[]>(`${this.apiUrl}/PeliculasySeries`);
   }
+
+  login(correo: string, contrasena: string): Observable<any> {
+    return this.http.post(`${this.apiUrl}/Login`, { correo, contrasena });
+  }
 }
