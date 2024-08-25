@@ -16,6 +16,17 @@ export interface CatalogoItem {
   duracion?: number;
 }
 
+export interface Pelicula {
+  titulo: string;
+  fechaEstreno: Date;
+  duracion: number;
+  sinopsis: string;
+  genero: string;
+  director: string;
+  poster: string;
+  trailer: string;
+}
+
 @Injectable({
   providedIn: 'root',
 })
@@ -35,5 +46,9 @@ export class UsersService {
 
   login(correo: string, contrasena: string): Observable<any> {
     return this.http.post(`${this.apiUrl}/Login`, { correo, contrasena });
+  }
+
+  getCatalogoPeliculas(): Observable<Pelicula[]> {
+    return this.http.get<Pelicula[]>(`${this.apiUrl}/Movies`);
   }
 }
