@@ -73,8 +73,9 @@ git clone [URL del repositorio]
 ```
 
 
-
-
+# Para el Backend
+Se coloca el backend que fue trabajado en equipo y colocamos el link de Hub ya que es demasiado pesado.
+https://github.com/AldairOrtiz-Kanako/Back_Peliculas_2.0.git
 
 # Descripcion del cómo se hizo
 
