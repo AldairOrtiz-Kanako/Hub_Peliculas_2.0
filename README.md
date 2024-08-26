@@ -77,6 +77,15 @@ git clone [URL del repositorio]
 Se coloca el backend que fue trabajado en equipo y colocamos el link de Hub ya que es demasiado pesado.
 https://github.com/AldairOrtiz-Kanako/Back_Peliculas_2.0.git
 
+# Para el uso de JWT
+Se necesita ejecutar el siguiente comando en la linea de comandos -> dotnet add package Microsoft.AspNetCore.Authentication.JwtBearer
+
+#Para correr el back dentro de VS Code
+Se necesita abrir el archivo antes descargado o arrastar a nuestro entorno, una vez que se ejecuto el comando anterior para el JWT se necescita ejecutar el comando -> dotnet run y se ejcutara el back, pero antes se deben de poner las credenciales correspondientes en el archivo appsettings.json en la cadena de conexión
+
+"HubPeliculas": "Server=Nombre_Server_BD;Database=Nombre_BD;User Id=Nombre_Usuario;Password=Contraseña;TrustServerCertificate=True;" todo esto correspondiente a tu BD de SQL Server
+
+
 # Descripcion del cómo se hizo
 
 1. Planificación Inicial: El proyecto comenzó con una sesión de brainstorming en la que se acordaron las características esenciales del Hub de Películas. Se definieron las funciones clave y se dividió el trabajo entre los miembros del equipo para maximizar la eficiencia y cumplir con los plazos establecidos.
