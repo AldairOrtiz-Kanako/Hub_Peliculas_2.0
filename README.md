@@ -85,6 +85,7 @@ git clone [URL del repositorio]
 5. Se realizaron pruebas (testing) en el proyecto de Angular, lo que nos permitió mejorar los resultados.
 6. En el uso de Docker, se implementaron todos los requisitos necesarios para construir las imágenes; sin embargo, no se logró cumplir completamente con los objetivos previstos.
 7. No se pudo implementar el uso de Kubernetes.
+
 # Diagrama Entidad-Relación
 
 Relaciones:
@@ -104,6 +105,19 @@ Este modelo es útil para una aplicación que maneja información sobre películ
 
 <img src="creacionBD.png" alt="Creacion bd" whith="5vw">
 
+# Funcionamiento de Swagger
+ <img src="SWAGGER.png" alt="Creacion bd" whith="5vw">
+<img src="Funcionamientoswagger.png" alt="Creacion bd" whith="5vw">
+
+# Funcionamiento del Hub
+<img src="crearusuario.png" alt="Creacion bd" whith="5vw">
+<img src="registroexitoso.png" alt="Registro" whith="5vw">
+<img src="inicio.png" alt="inicio" whith="5vw">
+<img src="peliculas.png" alt="Creacion bd" whith="5vw">
+<img src="series.png" alt="Creacion bd" whith="5vw">
+<img src="favoritos.png" alt="Creacion bd" whith="5vw">
+<img src="cerrar.png" alt="Creacion bd" whith="5vw">
+
 # Posibles mejoras futuras
 
 
@@ -118,15 +132,11 @@ Este modelo es útil para una aplicación que maneja información sobre películ
 
 Karma 
 
-<img src="public/karma.jpg" alt="Karma" whith="5vw">
+<img src="Captura de pantalla 2024-08-25 192909.png" alt="Karma" whith="5vw">
 
 Code coverage 
 
-<img src="public/coverage.jpg" alt="coverage" whith="5vw">
-
-# Documentación de la API
-
-
+<img src="coverage.png" alt="coverage" whith="5vw">
 
 # Contribuyentes al proyecto
 
