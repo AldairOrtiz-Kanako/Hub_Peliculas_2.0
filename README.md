@@ -98,11 +98,11 @@ Relaciones:
 
 Este modelo es útil para una aplicación que maneja información sobre películas y series, permitiendo a los usuarios agregar contenido a su lista de favoritos, y categorizando dicho contenido por género y director.
 
-<img src="public/entidad-relacion.jpg" alt="Entidad-Relación " whith="5vw">
+<img src="entidad-relacion.png" alt="Entidad-Relación " whith="5vw">
 
 # Creación de la BD
 
-<img src="public/creacionBD.jpg" alt="Creacion bd" whith="5vw">
+<img src="creacionBD.png" alt="Creacion bd" whith="5vw">
 
 # Posibles mejoras futuras
 
