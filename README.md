@@ -106,6 +106,9 @@ Este modelo es útil para una aplicación que maneja información sobre películ
 
 <img src="creacionBD.png" alt="Creacion bd" whith="5vw">
 
+## Query's DB
+Estos se encuentran en el archivo .rar llamado Query´s SQL Peliculas.rar, correr en el orden indicado
+
 # Funcionamiento de Swagger
  <img src="SWAGGER.png" alt="Creacion bd" whith="5vw">
 <img src="Funcionamientoswagger.png" alt="Creacion bd" whith="5vw">
