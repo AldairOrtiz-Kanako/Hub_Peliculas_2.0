@@ -115,8 +115,8 @@ Este modelo es útil para una aplicación que maneja información sobre películ
 <img src="registroexitoso.png" alt="Registro" whith="5vw">
 <img src="inicio.png" alt="inicio" whith="5vw">
 <img src="peliculas.png" alt="Creacion bd" whith="5vw">
-<img src="series.png" alt="Creacion bd" whith="5vw">
-<img src="favoritos.png" alt="Creacion bd" whith="5vw">
+<img src="series.png" alt="series" whith="5vw">
+<img src="Favoritos.png" alt="Favoritos" whith="5vw">
 <img src="cerrar.png" alt="Creacion bd" whith="5vw">
 
 # Posibles mejoras futuras
