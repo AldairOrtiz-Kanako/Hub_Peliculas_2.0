@@ -1,27 +1,137 @@
-# HubEntretenimiento
+<a name="readme-top"></a>
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.1.0.
+<div align="center">
+    ##Hub MegaPeliculas
 
-## Development server
+    Este proyecto fue generado con Angular CLI versión 18.1.0
+</div>
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+![Badge in progress](https://img.shields.io/badge/STATUS-DONE-green)
 
-## Code scaffolding
+<details>
+    <summary>Tabla de contenido</summary>
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+    - [Descripcion del proyecto](#descripcion-del-proyecto)
+    - [Objetivos](#objetivos)
+    - [Programas utilizados](#programas-utilizados)
+    - [Instrucciones para descargar y ejecutar](#instrucciones-para-descargar-y-ejecutar)
+    - [Descripción del cómo se hizo](#descripcion-del-como-se-hizo)
+    - [Diagrama Entidad-Relación](#diagrama-entidad-relacion)
+    - [Posibles mejoras futuras](#posibles-mejoras-futuras)
+    - [Sprint review](#sprint-review)
+    - [Imagenes de testing](#imagenes-de-testing)
+    - [Documentación de la API](#documentacion-de-la-api)
+    - [Contribuyentes al proyecto](#contribuyentes-al-proyecto)
 
-## Build
+</details>
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+# Descripción del proyecto
 
-## Running unit tests
+El presente trabajo, realizado en colaboración con un equipo de compañeros, expone el desarrollo completo de un Hub de Películas, desde su desarrollo inicial hasta su implementación final. Este hub fue desarrollado utilizando una API en ASP.NET con C# como lenguaje principal, y los datos se gestionaron a través de una base de datos en SQL Server. Se realizaron pruebas exhaustivas mediante Swagger para garantizar la correcta funcionalidad y la estabilidad del sistema. Este proyecto fue creado desde sus cimientos, permitiendo un enfoque integral en cada etapa del desarrollo, lo que permitió asegurar una implementación robusta y eficiente.
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+# Objetivos
+* Implementar un proyecto productivo con Kubernetes.
+* Mejorar el Hub de películas.  
+* Normalización de la BD.
+* Realizar una Api con ASP .net o Net core.
+* Aplicación de Docker.
 
-## Running end-to-end tests
+# Programas utilizados
+* Angular 18
+* Tailwind CSS
+* C# Asp.net
+* SQL Server
+* JWT
+* Swagger
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+# Instrucciones para descargar y ejecutar
 
-## Further help
+### Angular
+El primer paso, y el más importante, es clonar el repositorio remoto para ejecutarlo localmente.
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+```
+git clone [URL del repositorio]
+```
+
+A continuación, el siguiente paso será instalar las dependencias y módulos necesarios para que el proyecto funcione correctamente.
+
+```
+npm install o npm i
+```
+
+Para ejecutar la funcionalidad principal del programa, deberás ejecutar el siguiente comando en la terminal:
+
+```
+ng serve --open
+```
+
+### ASP.NET
+Como primer paso es clonar el repositorio.
+
+```
+git clone [URL del repositorio]
+```
+
+
+
+
+
+# Descripción del cómo se hizo
+
+1. Planificación Inicial: El proyecto comenzó con una sesión de brainstorming en la que se acordaron las características esenciales del Hub de Películas. Se definieron las funciones clave y se dividió el trabajo entre los miembros del equipo para maximizar la eficiencia y cumplir con los plazos establecidos.
+2. Diseño y Desarrollo de la Base de Datos: Se diseñó una base de datos en SQL Server que incluyó stored procedures para optimizar el rendimiento y asegurar la integridad de los datos. También se implementó una función de hashing para las contraseñas de los usuarios, garantizando así la seguridad de la información almacenada. La base de datos fue normalizada para evitar redundancias y asegurar la consistencia de los datos.
+3. Se desarrolló el backend utilizando C# con .NET Core. Para asegurar su correcto funcionamiento, se añadieron las credenciales, módulos y controladores necesarios. Posteriormente, se realizaron pruebas en Swagger, las cuales confirmaron que todo operaba de manera satisfactoria.
+4. Se trabajó en el frontend utilizando Angular, mejorando los componentes y realizando ajustes para optimizar la experiencia visual. Además, se estableció la conexión con la API, lo que permitió visualizar los archivos almacenados en la base de datos. Por otro lado, se implementaron funciones en el módulo de inicio de sesión y registro para garantizar la seguridad de los datos ingresados. Se verificó también que las funciones implementadas guardaran correctamente la información en la base de datos.
+5. Se realizaron pruebas (testing) en el proyecto de Angular, lo que nos permitió mejorar los resultados.
+6. En el uso de Docker, se implementaron todos los requisitos necesarios para construir las imágenes; sin embargo, no se logró cumplir completamente con los objetivos previstos.
+7. No se pudo implementar el uso de Kubernetes.
+# Diagrama Entidad-Relación
+
+Relaciones:
+- Usuarios -> Favoritos: Relación uno a muchos. Un usuario puede tener múltiples favoritos.
+- Películas -> Favoritos: Relación uno a muchos. Una película puede estar en la lista de favoritos de varios usuarios.
+- Series -> Favoritos: Relación uno a muchos. Una serie puede estar en la lista de favoritos de varios usuarios.
+- Películas -> Director: Relación muchos a uno. Una película tiene un director, pero un director puede tener varias películas.
+- Series -> Director: Relación muchos a uno. Una serie tiene un director, pero un director puede dirigir varias series.
+- Películas -> Género: Relación muchos a uno. Una película pertenece a un género, pero un género puede aplicarse a varias películas.
+- Series -> Género: Relación muchos a uno. Una serie pertenece a un género, pero un género puede aplicarse a varias series.
+
+Este modelo es útil para una aplicación que maneja información sobre películas y series, permitiendo a los usuarios agregar contenido a su lista de favoritos, y categorizando dicho contenido por género y director.
+
+<img src="public/entidad-relacion.jpg" alt="Entidad-Relación " whith="5vw">
+
+# Creación de la BD
+
+<img src="public/creacionBD.jpg" alt="Creacion bd" whith="5vw">
+
+# Posibles mejoras futuras
+
+
+# Sprint review
+
+| ¿Qué hice bien?                                                                                             | ¿Qué no hice bien | ¿Qué puedo hacer diferente?                          |
+| ---------------------------------------------------------------------------------------------------------------- | -------------------------------- | --------------------------------------------------- |
+| |  |  |
+
+
+# Imagenes de testing
+
+Karma 
+
+<img src="public/karma.jpg" alt="Karma" whith="5vw">
+
+Code coverage 
+
+<img src="public/coverage.jpg" alt="coverage" whith="5vw">
+
+# Documentación de la API
+
+
+
+# Contribuyentes al proyecto
+
+| [<img src="https://avatars.githubusercontent.com/u/116055107?v=4" width=115><br><sub>Montserrat Aguilar Valle</sub>](https://github.com/montsegv-2) | [<img src="https://avatars.githubusercontent.com/u/175365956?v=4" width=115><br><sub>Carlos Aldair Ortiz</sub>](https://github.com/AldairOrtiz-Kanako) | [<img src="https://avatars.githubusercontent.com/u/175587873?v=4" width=115><br><sub>K. Julieta Jiménez García</sub>](https://github.com/Julieta171) | [<img src="https://avatars.githubusercontent.com/u/179277918?v=4" width=115><br><sub>Emmanuel Salcedo</sub>](https://github.com/EmmanuelDev97)
+| :---: | :---: | :---: | :---: |
+
+
+<p align="right">(<a href="#readme-top">Volver al inicio</a>)</p>
