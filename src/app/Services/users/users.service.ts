@@ -47,7 +47,7 @@ export interface UsuarioDto {
   correo: string;
 }
 
-interface LoginResponse {
+export interface LoginResponse {
   isSuccess: boolean;
   token: string;
   userId: string;
