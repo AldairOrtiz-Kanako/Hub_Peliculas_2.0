@@ -131,24 +131,8 @@ Este modelo es útil para una aplicación que maneja información sobre películ
 | ---------------------------------------------------------------------------------------------------------------- | -------------------------------- | --------------------------------------------------- |
 | |  |  |
 
-
-# Imagenes de testing
-
-Karma 
-
-<<<<<<< HEAD
-<img src="public/karma.png" alt="Karma" whith="5vw">
-
-Code coverage 
-
-<img src="public/coverage.png" alt="coverage" whith="5vw">
-
 # Documentacion de la API
 
-<img src="public/swagger.png" alt="swagger" whith="5vw">
-
-<img src="public/swaggerApi.png" alt="swaggerApi" whith="5vw">
-=======
 <img src="Captura de pantalla 2024-08-25 192909.png" alt="Karma" whith="5vw">
 
 Code coverage 
