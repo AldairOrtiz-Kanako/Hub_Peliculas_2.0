@@ -105,6 +105,19 @@ Este modelo es útil para una aplicación que maneja información sobre películ
 
 <img src="creacionBD.png" alt="Creacion bd" whith="5vw">
 
+# Funcionamiento de Swagger
+ <img src="SWAGGER.png" alt="Creacion bd" whith="5vw">
+<img src="Funcionamientoswagger.png" alt="Creacion bd" whith="5vw">
+
+# Funcionamiento del Hub
+<img src="crearusuario.png" alt="Creacion bd" whith="5vw">
+<img src="registroexitoso.png" alt="Registro" whith="5vw">
+<img src="inicio.png" alt="inicio" whith="5vw">
+<img src="peliculas.png" alt="Creacion bd" whith="5vw">
+<img src="series.png" alt="Creacion bd" whith="5vw">
+<img src="favoritos.png" alt="Creacion bd" whith="5vw">
+<img src="cerrar.png" alt="Creacion bd" whith="5vw">
+
 # Posibles mejoras futuras
 
 - Agregar correctamente agregar peliculas y series a favoritos
@@ -123,6 +136,7 @@ Este modelo es útil para una aplicación que maneja información sobre películ
 
 Karma 
 
+<<<<<<< HEAD
 <img src="public/karma.png" alt="Karma" whith="5vw">
 
 Code coverage 
@@ -134,6 +148,13 @@ Code coverage
 <img src="public/swagger.png" alt="swagger" whith="5vw">
 
 <img src="public/swaggerApi.png" alt="swaggerApi" whith="5vw">
+=======
+<img src="Captura de pantalla 2024-08-25 192909.png" alt="Karma" whith="5vw">
+
+Code coverage 
+
+<img src="coverage.png" alt="coverage" whith="5vw">
+>>>>>>> b37fcbad23d445baad56bf66c81b748c963bbff9
 
 # Contribuyentes al proyecto
 
