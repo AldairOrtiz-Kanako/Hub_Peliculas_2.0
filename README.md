@@ -1,7 +1,7 @@
 <a name="readme-top"></a>
 
 <div align="center">
-    ##Hub MegaPeliculas
+    ## Hub MegaPeliculas
 
     Este proyecto fue generado con Angular CLI versión 18.1.0
 </div>
@@ -15,17 +15,17 @@
     - [Objetivos](#objetivos)
     - [Programas utilizados](#programas-utilizados)
     - [Instrucciones para descargar y ejecutar](#instrucciones-para-descargar-y-ejecutar)
-    - [Descripción del cómo se hizo](#descripcion-del-como-se-hizo)
-    - [Diagrama Entidad-Relación](#diagrama-entidad-relacion)
+    - [Descripcion del como se hizo](#descripcion-del-como-se-hizo)
+    - [Diagrama Entidad-Relacion](#diagrama-entidad-relacion)
     - [Posibles mejoras futuras](#posibles-mejoras-futuras)
     - [Sprint review](#sprint-review)
     - [Imagenes de testing](#imagenes-de-testing)
-    - [Documentación de la API](#documentacion-de-la-api)
+    - [Documentacion de la API](#documentacion-de-la-api)
     - [Contribuyentes al proyecto](#contribuyentes-al-proyecto)
 
 </details>
 
-# Descripción del proyecto
+# Descripcion del proyecto
 
 El presente trabajo, realizado en colaboración con un equipo de compañeros, expone el desarrollo completo de un Hub de Películas, desde su desarrollo inicial hasta su implementación final. Este hub fue desarrollado utilizando una API en ASP.NET con C# como lenguaje principal, y los datos se gestionaron a través de una base de datos en SQL Server. Se realizaron pruebas exhaustivas mediante Swagger para garantizar la correcta funcionalidad y la estabilidad del sistema. Este proyecto fue creado desde sus cimientos, permitiendo un enfoque integral en cada etapa del desarrollo, lo que permitió asegurar una implementación robusta y eficiente.
 
@@ -76,7 +76,7 @@ git clone [URL del repositorio]
 
 
 
-# Descripción del cómo se hizo
+# Descripcion del cómo se hizo
 
 1. Planificación Inicial: El proyecto comenzó con una sesión de brainstorming en la que se acordaron las características esenciales del Hub de Películas. Se definieron las funciones clave y se dividió el trabajo entre los miembros del equipo para maximizar la eficiencia y cumplir con los plazos establecidos.
 2. Diseño y Desarrollo de la Base de Datos: Se diseñó una base de datos en SQL Server que incluyó stored procedures para optimizar el rendimiento y asegurar la integridad de los datos. También se implementó una función de hashing para las contraseñas de los usuarios, garantizando así la seguridad de la información almacenada. La base de datos fue normalizada para evitar redundancias y asegurar la consistencia de los datos.
@@ -85,6 +85,7 @@ git clone [URL del repositorio]
 5. Se realizaron pruebas (testing) en el proyecto de Angular, lo que nos permitió mejorar los resultados.
 6. En el uso de Docker, se implementaron todos los requisitos necesarios para construir las imágenes; sin embargo, no se logró cumplir completamente con los objetivos previstos.
 7. No se pudo implementar el uso de Kubernetes.
+
 # Diagrama Entidad-Relación
 
 Relaciones:
@@ -98,14 +99,18 @@ Relaciones:
 
 Este modelo es útil para una aplicación que maneja información sobre películas y series, permitiendo a los usuarios agregar contenido a su lista de favoritos, y categorizando dicho contenido por género y director.
 
-<img src="public/entidad-relacion.jpg" alt="Entidad-Relación " whith="5vw">
+<img src="public/entidad-relacion.png" alt="Entidad-Relación " whith="5vw">
 
-# Creación de la BD
+# Creacion de la BD
 
-<img src="public/creacionBD.jpg" alt="Creacion bd" whith="5vw">
+<img src="public/creacionBD.png" alt="Creacion bd" whith="5vw">
 
 # Posibles mejoras futuras
 
+- Agregar correctamente agregar peliculas y series a favoritos
+- Implementar un modal para ver los detalles de la pelicula seleccionada
+- Habilitar la funcion del boton recuerdame en el login
+- Implementar correctamente la barra de busqueda
 
 # Sprint review
 
@@ -118,15 +123,17 @@ Este modelo es útil para una aplicación que maneja información sobre películ
 
 Karma 
 
-<img src="public/karma.jpg" alt="Karma" whith="5vw">
+<img src="public/karma.png" alt="Karma" whith="5vw">
 
 Code coverage 
 
-<img src="public/coverage.jpg" alt="coverage" whith="5vw">
+<img src="public/coverage.png" alt="coverage" whith="5vw">
 
-# Documentación de la API
+# Documentacion de la API
 
+<img src="public/swagger.png" alt="swagger" whith="5vw">
 
+<img src="public/swaggerApi.png" alt="swaggerApi" whith="5vw">
 
 # Contribuyentes al proyecto
 
